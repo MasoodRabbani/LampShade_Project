@@ -1,0 +1,9 @@
+E:\New folder (2)\Code\LampShade\0_Framwork\bin\Debug\net5.0\0_Framwork.deps.json
+E:\New folder (2)\Code\LampShade\0_Framwork\bin\Debug\net5.0\0_Framwork.dll
+E:\New folder (2)\Code\LampShade\0_Framwork\bin\Debug\net5.0\0_Framwork.pdb
+E:\New folder (2)\Code\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.csprojAssemblyReference.cache
+E:\New folder (2)\Code\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.AssemblyInfoInputs.cache
+E:\New folder (2)\Code\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.AssemblyInfo.cs
+E:\New folder (2)\Code\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.dll
+E:\New folder (2)\Code\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.pdb
+E:\New folder (2)\Code\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.csproj.CoreCompileInputs.cache

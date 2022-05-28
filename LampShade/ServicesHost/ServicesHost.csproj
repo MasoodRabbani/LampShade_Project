@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\..\..\New folder %25282%2529\Code\LampShade\ServicesHost\wwwroot\AdminTheme\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="..\..\..\..\New folder %25282%2529\Code\LampShade\ServicesHost\wwwroot\AdminTheme\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="..\..\..\..\New folder %25282%2529\Code\LampShade\ServicesHost\wwwroot\AdminTheme\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="..\..\..\..\New folder %25282%2529\Code\LampShade\ServicesHost\wwwroot\AdminTheme\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="..\..\..\..\New folder %25282%2529\Code\LampShade\ServicesHost\wwwroot\AdminTheme\fonts\fontawesome-webfont3e6e.woff2" />
+    <Content Include="..\..\..\..\New folder %25282%2529\Code\LampShade\ServicesHost\wwwroot\AdminTheme\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="..\..\..\..\New folder %25282%2529\Code\LampShade\ServicesHost\wwwroot\AdminTheme\fonts\ionicons28b5.eot" />
+    <Content Include="..\..\..\..\New folder %25282%2529\Code\LampShade\ServicesHost\wwwroot\AdminTheme\fonts\ionicons28b5.svg" />
+    <Content Include="..\..\..\..\New folder %25282%2529\Code\LampShade\ServicesHost\wwwroot\AdminTheme\fonts\ionicons28b5.ttf" />
+    <Content Include="..\..\..\..\New folder %25282%2529\Code\LampShade\ServicesHost\wwwroot\AdminTheme\fonts\ionicons28b5.woff" />
+    <Content Include="..\..\..\..\New folder %25282%2529\Code\LampShade\ServicesHost\wwwroot\AdminTheme\fonts\IranianSans.eot" />
+    <Content Include="..\..\..\..\New folder %25282%2529\Code\LampShade\ServicesHost\wwwroot\AdminTheme\fonts\IranianSans.svg" />
+    <Content Include="..\..\..\..\New folder %25282%2529\Code\LampShade\ServicesHost\wwwroot\AdminTheme\fonts\IranianSans.ttf" />
+    <Content Include="..\..\..\..\New folder %25282%2529\Code\LampShade\ServicesHost\wwwroot\AdminTheme\fonts\IranianSans.woff" />
+    <Content Include="..\..\..\..\New folder %25282%2529\Code\LampShade\ServicesHost\wwwroot\AdminTheme\fonts\IranianSans.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shopmanagement.Configoration\Shopmanagement.Configoration.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0-preview.6.20312.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.0-preview.6.20323.1" />
+  </ItemGroup>
+
+</Project>

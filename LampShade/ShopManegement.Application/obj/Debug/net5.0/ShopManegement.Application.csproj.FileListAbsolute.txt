@@ -1,0 +1,16 @@
+E:\New folder (2)\Code\LampShade\ShopManegement.Application\bin\Debug\net5.0\ShopManegement.Application.deps.json
+E:\New folder (2)\Code\LampShade\ShopManegement.Application\bin\Debug\net5.0\ShopManegement.Application.dll
+E:\New folder (2)\Code\LampShade\ShopManegement.Application\bin\Debug\net5.0\ShopManegement.Application.pdb
+E:\New folder (2)\Code\LampShade\ShopManegement.Application\bin\Debug\net5.0\0_Framwork.dll
+E:\New folder (2)\Code\LampShade\ShopManegement.Application\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
+E:\New folder (2)\Code\LampShade\ShopManegement.Application\bin\Debug\net5.0\ShopManagement.Domain.dll
+E:\New folder (2)\Code\LampShade\ShopManegement.Application\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
+E:\New folder (2)\Code\LampShade\ShopManegement.Application\bin\Debug\net5.0\ShopManagement.Domain.pdb
+E:\New folder (2)\Code\LampShade\ShopManegement.Application\bin\Debug\net5.0\0_Framwork.pdb
+E:\New folder (2)\Code\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.csprojAssemblyReference.cache
+E:\New folder (2)\Code\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.AssemblyInfoInputs.cache
+E:\New folder (2)\Code\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.AssemblyInfo.cs
+E:\New folder (2)\Code\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.csproj.CoreCompileInputs.cache
+E:\New folder (2)\Code\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.csproj.CopyComplete
+E:\New folder (2)\Code\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.dll
+E:\New folder (2)\Code\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.pdb

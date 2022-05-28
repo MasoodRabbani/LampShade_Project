@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\New folder (2)\\Code\\LampShade\\0_Framwork\\0_Framwork.csproj": {}
+  },
+  "projects": {
+    "E:\\New folder (2)\\Code\\LampShade\\0_Framwork\\0_Framwork.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\New folder (2)\\Code\\LampShade\\0_Framwork\\0_Framwork.csproj",
+        "projectName": "0_Framwork",
+        "projectPath": "E:\\New folder (2)\\Code\\LampShade\\0_Framwork\\0_Framwork.csproj",
+        "packagesPath": "C:\\Users\\MrClike\\.nuget\\packages\\",
+        "outputPath": "E:\\New folder (2)\\Code\\LampShade\\0_Framwork\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MrClike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0-preview.6.20312.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.6.20318.15\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
