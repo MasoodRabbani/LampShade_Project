@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4ZBjPxt3aBp3QaB/bmJ05gEWsj+ucG5jqx6cZCHHXzgmT+/AKK8RZX+gTgkDxf+ERa8Rrn7a+tQOiL8gLa5Wrg==",
+  "dgSpecHash": "lTCCLMkpZKM4umCL5Yqm+BgCXq9pie7MZbMVNsuq6GLS7Ueq0njcB5H7+TdahJzTvv7ZfMCOjRMHR5ico2f/rg==",
   "success": true,
   "projectFilePath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ServicesHost\\ServicesHost.csproj",
   "expectedPackageFiles": [
@@ -130,8 +130,7 @@
     "C:\\Users\\MrClike\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\MrClike\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\MrClike\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\MrClike\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\MrClike\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+    "C:\\Users\\MrClike\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

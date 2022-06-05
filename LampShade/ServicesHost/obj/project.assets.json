@@ -2015,6 +2015,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "01_LampShadeQuery/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ShopManegement.Infrastracture.EFCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/01_LampShadeQuery.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/01_LampShadeQuery.dll": {}
+        }
+      },
       "0_Framwork/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -2045,6 +2058,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "01_LampShadeQuery": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "ShopManagement.Application.Contracts": "1.0.0",
           "ShopManegement.Application": "1.0.0",
@@ -7172,6 +7186,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "01_LampShadeQuery/1.0.0": {
+      "type": "project",
+      "path": "../01_LampShadeQuery/01_LampShadeQuery.csproj",
+      "msbuildProject": "../01_LampShadeQuery/01_LampShadeQuery.csproj"
+    },
     "0_Framwork/1.0.0": {
       "type": "project",
       "path": "../0_Framwork/0_Framwork.csproj",
@@ -7274,12 +7293,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.16, 5.0.16]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -7288,7 +7301,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

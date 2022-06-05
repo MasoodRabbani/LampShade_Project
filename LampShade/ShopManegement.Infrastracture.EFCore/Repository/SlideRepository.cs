@@ -30,6 +30,7 @@ namespace ShopManegement.Infrastracture.EFCore.Repository
                 PictureTitle = s.PictureTitle,
                 Text = s.Text,
                 Title = s.Title,
+                Link=s.Link,
             }).FirstOrDefault(s=>s.Id==id);
         }
 

@@ -41,3 +41,5 @@ C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Sh
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Shopmanagement.Configoration\obj\Debug\net5.0\refint\Shopmanagement.Configuration.dll
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Shopmanagement.Configoration\obj\Debug\net5.0\Shopmanagement.Configuration.pdb
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Shopmanagement.Configoration\obj\Debug\net5.0\ref\Shopmanagement.Configuration.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Shopmanagement.Configoration\bin\Debug\net5.0\01_LampShadeQuery.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Shopmanagement.Configoration\bin\Debug\net5.0\01_LampShadeQuery.pdb
