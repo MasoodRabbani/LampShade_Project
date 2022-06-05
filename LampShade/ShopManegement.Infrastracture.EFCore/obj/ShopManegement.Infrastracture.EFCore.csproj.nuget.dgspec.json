@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\New folder (2)\\Code\\LampShade\\ShopManegement.Infrastracture.EFCore\\ShopManegement.Infrastracture.EFCore.csproj": {}
+    "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManegement.Infrastracture.EFCore\\ShopManegement.Infrastracture.EFCore.csproj": {}
   },
   "projects": {
-    "E:\\New folder (2)\\Code\\LampShade\\0_Framwork\\0_Framwork.csproj": {
+    "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\0_Framwork\\0_Framwork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\New folder (2)\\Code\\LampShade\\0_Framwork\\0_Framwork.csproj",
+        "projectUniqueName": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\0_Framwork\\0_Framwork.csproj",
         "projectName": "0_Framwork",
-        "projectPath": "E:\\New folder (2)\\Code\\LampShade\\0_Framwork\\0_Framwork.csproj",
+        "projectPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\0_Framwork\\0_Framwork.csproj",
         "packagesPath": "C:\\Users\\MrClike\\.nuget\\packages\\",
-        "outputPath": "E:\\New folder (2)\\Code\\LampShade\\0_Framwork\\obj\\",
+        "outputPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\0_Framwork\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MrClike\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -58,18 +60,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.6.20318.15\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\New folder (2)\\Code\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+    "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\New folder (2)\\Code\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
         "projectName": "ShopManagement.Application.Contracts",
-        "projectPath": "E:\\New folder (2)\\Code\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
+        "projectPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
         "packagesPath": "C:\\Users\\MrClike\\.nuget\\packages\\",
-        "outputPath": "E:\\New folder (2)\\Code\\LampShade\\ShopManagement.Application.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManagement.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MrClike\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -84,9 +86,10 @@
         },
         "frameworks": {
           "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\New folder (2)\\Code\\LampShade\\0_Framwork\\0_Framwork.csproj": {
-                "projectPath": "E:\\New folder (2)\\Code\\LampShade\\0_Framwork\\0_Framwork.csproj"
+              "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\0_Framwork\\0_Framwork.csproj": {
+                "projectPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\0_Framwork\\0_Framwork.csproj"
               }
             }
           }
@@ -99,6 +102,7 @@
       },
       "frameworks": {
         "net5.0": {
+          "targetAlias": "net5.0",
           "imports": [
             "net461",
             "net462",
@@ -114,18 +118,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.6.20318.15\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\New folder (2)\\Code\\LampShade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+    "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\New folder (2)\\Code\\LampShade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
         "projectName": "ShopManagement.Domain",
-        "projectPath": "E:\\New folder (2)\\Code\\LampShade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
+        "projectPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\MrClike\\.nuget\\packages\\",
-        "outputPath": "E:\\New folder (2)\\Code\\LampShade\\ShopManagement.Domain\\obj\\",
+        "outputPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MrClike\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -140,12 +144,13 @@
         },
         "frameworks": {
           "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\New folder (2)\\Code\\LampShade\\0_Framwork\\0_Framwork.csproj": {
-                "projectPath": "E:\\New folder (2)\\Code\\LampShade\\0_Framwork\\0_Framwork.csproj"
+              "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\0_Framwork\\0_Framwork.csproj": {
+                "projectPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\0_Framwork\\0_Framwork.csproj"
               },
-              "E:\\New folder (2)\\Code\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "E:\\New folder (2)\\Code\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -158,6 +163,7 @@
       },
       "frameworks": {
         "net5.0": {
+          "targetAlias": "net5.0",
           "imports": [
             "net461",
             "net462",
@@ -173,18 +179,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.6.20318.15\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\New folder (2)\\Code\\LampShade\\ShopManegement.Infrastracture.EFCore\\ShopManegement.Infrastracture.EFCore.csproj": {
+    "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManegement.Infrastracture.EFCore\\ShopManegement.Infrastracture.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\New folder (2)\\Code\\LampShade\\ShopManegement.Infrastracture.EFCore\\ShopManegement.Infrastracture.EFCore.csproj",
+        "projectUniqueName": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManegement.Infrastracture.EFCore\\ShopManegement.Infrastracture.EFCore.csproj",
         "projectName": "ShopManegement.Infrastracture.EFCore",
-        "projectPath": "E:\\New folder (2)\\Code\\LampShade\\ShopManegement.Infrastracture.EFCore\\ShopManegement.Infrastracture.EFCore.csproj",
+        "projectPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManegement.Infrastracture.EFCore\\ShopManegement.Infrastracture.EFCore.csproj",
         "packagesPath": "C:\\Users\\MrClike\\.nuget\\packages\\",
-        "outputPath": "E:\\New folder (2)\\Code\\LampShade\\ShopManegement.Infrastracture.EFCore\\obj\\",
+        "outputPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManegement.Infrastracture.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MrClike\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -199,9 +205,10 @@
         },
         "frameworks": {
           "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\New folder (2)\\Code\\LampShade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-                "projectPath": "E:\\New folder (2)\\Code\\LampShade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               }
             }
           }
@@ -214,6 +221,7 @@
       },
       "frameworks": {
         "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -245,7 +253,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.6.20318.15\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

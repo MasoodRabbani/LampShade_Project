@@ -5,7 +5,10 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
+using ShopManagement.Domain.ProductPictureAgg;
+using ShopManagement.Domain.SlideAgg;
 using ShopManegement.Infrastracture.EFCore.Mapping;
 
 namespace ShopManegement.Infrastracture.EFCore
@@ -13,6 +16,9 @@ namespace ShopManegement.Infrastracture.EFCore
     public class ShopContext:DbContext
     {
         public DbSet<ProductCategory> ProductCategories { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductPicture> ProductPictures { get; set; }
+        public DbSet<Slide> Slides { get; set; }
 
         public ShopContext(DbContextOptions<ShopContext> options):base(options)
         {

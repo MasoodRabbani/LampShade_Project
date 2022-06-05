@@ -11,7 +11,7 @@ using ShopManagement.Domain.ProductCategoryAgg;
 
 namespace ShopManegement.Infrastracture.EFCore.Repository
 {
-    public class ProductCategoryRepository : ReposuitoryBase<long,ProductCategory>,IProductCategoryRepository
+    public class ProductCategoryRepository : RepositoryBase<long,ProductCategory>,IProductCategoryRepository
     {
         private readonly ShopContext db;
 
@@ -33,6 +33,15 @@ namespace ShopManegement.Infrastracture.EFCore.Repository
                 PictureTitle = s.PictureTitle,
                 PictureAlt = s.PictureAlt
             }).FirstOrDefault(s => s.Id == id);
+        }
+
+        public List<ProductCategoryViewModel> GetProductCategories()
+        {
+            return db.ProductCategories.Select(s => new ProductCategoryViewModel()
+            {
+                Id = s.Id,
+                Name = s.Name,
+            }).ToList();
         }
 
         public List<ProductCategoryViewModel> Search(ProductCategorySearchModel command)

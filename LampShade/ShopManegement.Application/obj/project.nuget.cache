@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sKPFUhy9VWW+Zv0jmOfDjBk+MYHNdFZpsIvEU/vFe1VgAeyx73Fa6TbO1osh/IvllY5uBih7cu4Vbvw1WoSSyw==",
+  "dgSpecHash": "cVqZNq6x2SmrN7Cn4l4Z6hegkapKShhcXEBnTVV+Dsj+F5rzar7u/x1nDfQ0oAm0gD1Kan9U+JE0nA8s0UOlXg==",
   "success": true,
-  "projectFilePath": "E:\\New folder (2)\\Code\\LampShade\\ShopManegement.Application\\ShopManegement.Application.csproj",
+  "projectFilePath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManegement.Application\\ShopManegement.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MrClike\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0-preview.6.20312.4\\microsoft.entityframeworkcore.5.0.0-preview.6.20312.4.nupkg.sha512",
     "C:\\Users\\MrClike\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0-preview.6.20312.4\\microsoft.entityframeworkcore.abstractions.5.0.0-preview.6.20312.4.nupkg.sha512",

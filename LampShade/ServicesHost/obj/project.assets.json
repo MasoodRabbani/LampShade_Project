@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v5.0": {
+    "net5.0": {
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -7204,7 +7204,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v5.0": [
+    "net5.0": [
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0-preview.6.20312.4",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.0-preview.6.20323.1",
       "Shopmanagement.Configuration >= 1.0.0"
@@ -7216,11 +7216,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\New folder (2)\\Code\\LampShade\\ServicesHost\\ServicesHost.csproj",
+      "projectUniqueName": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ServicesHost\\ServicesHost.csproj",
       "projectName": "ServicesHost",
-      "projectPath": "E:\\New folder (2)\\Code\\LampShade\\ServicesHost\\ServicesHost.csproj",
+      "projectPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ServicesHost\\ServicesHost.csproj",
       "packagesPath": "C:\\Users\\MrClike\\.nuget\\packages\\",
-      "outputPath": "E:\\New folder (2)\\Code\\LampShade\\ServicesHost\\obj\\",
+      "outputPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ServicesHost\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MrClike\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7235,9 +7235,10 @@
       },
       "frameworks": {
         "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\New folder (2)\\Code\\LampShade\\Shopmanagement.Configoration\\Shopmanagement.Configoration.csproj": {
-              "projectPath": "E:\\New folder (2)\\Code\\LampShade\\Shopmanagement.Configoration\\Shopmanagement.Configoration.csproj"
+            "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\Shopmanagement.Configoration\\Shopmanagement.Configoration.csproj": {
+              "projectPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\Shopmanagement.Configoration\\Shopmanagement.Configoration.csproj"
             }
           }
         }
@@ -7250,6 +7251,7 @@
     },
     "frameworks": {
       "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -7272,6 +7274,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.16, 5.0.16]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -7280,7 +7288,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.6.20318.15\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

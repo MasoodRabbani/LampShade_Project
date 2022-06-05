@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gPtRqd4mDURiREFN+5w7c96kPWAcOnR8kj5K9lm+kPiGsFlT7zd4QCCDlmgndyxSWCg91IyltVnfX1B7mlM7uQ==",
+  "dgSpecHash": "y8xRdIShJzNiVwbqq8+7PQ+VTu2MQVCP52iIHDkqHnO4SHqdLXMqxuDhy6TudEY5p8nQsuzcU6sZCYAdrCrHfA==",
   "success": true,
-  "projectFilePath": "E:\\New folder (2)\\Code\\LampShade\\ShopManegement.Infrastracture.EFCore\\ShopManegement.Infrastracture.EFCore.csproj",
+  "projectFilePath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ShopManegement.Infrastracture.EFCore\\ShopManegement.Infrastracture.EFCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MrClike\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\MrClike\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.0-preview3.20122.2\\microsoft.data.sqlclient.2.0.0-preview3.20122.2.nupkg.sha512",

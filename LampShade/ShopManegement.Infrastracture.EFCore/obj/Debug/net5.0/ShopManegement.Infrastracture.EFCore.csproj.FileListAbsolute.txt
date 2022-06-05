@@ -17,3 +17,25 @@ E:\New folder (2)\Code\LampShade\ShopManegement.Infrastracture.EFCore\obj\Debug\
 E:\New folder (2)\Code\LampShade\ShopManegement.Infrastracture.EFCore\obj\Debug\net5.0\ShopManegement.Infrastracture.EFCore.dll
 E:\New folder (2)\Code\LampShade\ShopManegement.Infrastracture.EFCore\obj\Debug\net5.0\ShopManegement.Infrastracture.EFCore.pdb
 E:\New folder (2)\Code\LampShade\ShopManegement.Infrastracture.EFCore\obj\Debug\net5.0\ShopManegement.Infrastracture.EFCore.genruntimeconfig.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\bin\Debug\net5.0\ShopManegement.Infrastracture.EFCore.deps.json
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\bin\Debug\net5.0\ShopManegement.Infrastracture.EFCore.runtimeconfig.json
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\bin\Debug\net5.0\ShopManegement.Infrastracture.EFCore.runtimeconfig.dev.json
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\bin\Debug\net5.0\ShopManegement.Infrastracture.EFCore.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\bin\Debug\net5.0\ShopManegement.Infrastracture.EFCore.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\bin\Debug\net5.0\0_Framwork.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\bin\Debug\net5.0\ShopManagement.Domain.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\bin\Debug\net5.0\ShopManagement.Domain.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\bin\Debug\net5.0\0_Framwork.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\obj\Debug\net5.0\ShopManegement.Infrastracture.EFCore.csproj.AssemblyReference.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\obj\Debug\net5.0\ShopManegement.Infrastracture.EFCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\obj\Debug\net5.0\ShopManegement.Infrastracture.EFCore.AssemblyInfoInputs.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\obj\Debug\net5.0\ShopManegement.Infrastracture.EFCore.AssemblyInfo.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\obj\Debug\net5.0\ShopManegement.Infrastracture.EFCore.csproj.CoreCompileInputs.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\obj\Debug\net5.0\ShopManegement.Infrastracture.EFCore.csproj.CopyComplete
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\obj\Debug\net5.0\ShopManegement.Infrastracture.EFCore.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\obj\Debug\net5.0\refint\ShopManegement.Infrastracture.EFCore.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\obj\Debug\net5.0\ShopManegement.Infrastracture.EFCore.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\obj\Debug\net5.0\ShopManegement.Infrastracture.EFCore.genruntimeconfig.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Infrastracture.EFCore\obj\Debug\net5.0\ref\ShopManegement.Infrastracture.EFCore.dll

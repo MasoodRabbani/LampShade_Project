@@ -9,6 +9,7 @@ namespace ShopManagement.Application.Contracts.ProductCategory
 {
     public interface IProductCategoryApplication
     {
+        List<ProductCategoryViewModel> GetProductCategories();
         OprationResult Create(CreateProductCategory model);
         OprationResult Edit(EditProductCategory model);
         EditProductCategory GetDetails(long Id);

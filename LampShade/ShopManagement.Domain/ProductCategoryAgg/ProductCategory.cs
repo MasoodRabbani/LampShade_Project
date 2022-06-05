@@ -17,10 +17,11 @@ namespace ShopManagement.Domain.ProductCategoryAgg
         public string Keywords { get;private set; }
         public string MetaDescription { get;private set; }
         public string Slug { get;private set; }
+        public List<ProductAgg.Product> Products { get; set; }
 
-        protected ProductCategory()
+        public ProductCategory()
         {
-            
+            Products = new List<ProductAgg.Product>();
         }
         public ProductCategory(string name, string description, string piture, string pitureAlt, string pitureTitle, string keywords, string metaDescription, string slug)
         {

@@ -14,3 +14,22 @@ E:\New folder (2)\Code\LampShade\ShopManegement.Application\obj\Debug\net5.0\Sho
 E:\New folder (2)\Code\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.csproj.CopyComplete
 E:\New folder (2)\Code\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.dll
 E:\New folder (2)\Code\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\bin\Debug\net5.0\ShopManegement.Application.deps.json
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\bin\Debug\net5.0\ShopManegement.Application.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\bin\Debug\net5.0\ShopManegement.Application.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\bin\Debug\net5.0\0_Framwork.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\bin\Debug\net5.0\ShopManagement.Domain.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\bin\Debug\net5.0\ShopManagement.Domain.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\bin\Debug\net5.0\0_Framwork.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.csproj.AssemblyReference.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.AssemblyInfoInputs.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.AssemblyInfo.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.csproj.CoreCompileInputs.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.csproj.CopyComplete
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\obj\Debug\net5.0\refint\ShopManegement.Application.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\obj\Debug\net5.0\ShopManegement.Application.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ShopManegement.Application\obj\Debug\net5.0\ref\ShopManegement.Application.dll

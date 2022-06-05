@@ -7,3 +7,15 @@ E:\New folder (2)\Code\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.Assembly
 E:\New folder (2)\Code\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.dll
 E:\New folder (2)\Code\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.pdb
 E:\New folder (2)\Code\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.csproj.CoreCompileInputs.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\0_Framwork\bin\Debug\net5.0\0_Framwork.deps.json
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\0_Framwork\bin\Debug\net5.0\0_Framwork.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\0_Framwork\bin\Debug\net5.0\0_Framwork.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.csproj.AssemblyReference.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.AssemblyInfoInputs.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.AssemblyInfo.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.csproj.CoreCompileInputs.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\0_Framwork\obj\Debug\net5.0\refint\0_Framwork.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\0_Framwork\obj\Debug\net5.0\0_Framwork.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\0_Framwork\obj\Debug\net5.0\ref\0_Framwork.dll

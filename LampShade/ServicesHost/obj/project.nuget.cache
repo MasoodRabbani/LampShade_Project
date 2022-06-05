@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Mg/+XpH1k8xQLFOrmuLxka/P9LVHXenVZ51Vj05dyNZhyJ/XZAjzo+CuZ4FExF3lqGG0d5kYRCDcTz0YjVmj0w==",
+  "dgSpecHash": "4ZBjPxt3aBp3QaB/bmJ05gEWsj+ucG5jqx6cZCHHXzgmT+/AKK8RZX+gTgkDxf+ERa8Rrn7a+tQOiL8gLa5Wrg==",
   "success": true,
-  "projectFilePath": "E:\\New folder (2)\\Code\\LampShade\\ServicesHost\\ServicesHost.csproj",
+  "projectFilePath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\ServicesHost\\ServicesHost.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MrClike\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\MrClike\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
@@ -130,7 +130,8 @@
     "C:\\Users\\MrClike\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\MrClike\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\MrClike\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\MrClike\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\MrClike\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\MrClike\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
   ],
   "logs": []
 }
