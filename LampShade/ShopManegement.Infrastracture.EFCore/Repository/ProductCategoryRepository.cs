@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using _0_Framwork.Application;
 using _0_Framwork.Domain;
 using _0_Framwork.Infrastructure;
 using ShopManagement.Application.Contracts.ProductCategory;
@@ -50,7 +51,7 @@ namespace ShopManegement.Infrastracture.EFCore.Repository
             {
                 Name = s.Name,
                 Id = s.Id,
-                CreationDate = s.CreationDate.ToString(),
+                CreationDate = s.CreationDate.ToFarsi(),
                 Picture = s.Picture,
 
             });

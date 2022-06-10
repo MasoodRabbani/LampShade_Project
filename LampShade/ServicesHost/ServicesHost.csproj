@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DiscountManagementConfiguration.Bootstrapper\DiscountManagementConfiguration.Bootstrapper.csproj" />
     <ProjectReference Include="..\Shopmanagement.Configoration\Shopmanagement.Configoration.csproj" />
   </ItemGroup>
 

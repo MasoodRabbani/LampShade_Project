@@ -19,6 +19,7 @@ using ShopManagement.Application.Contracts.Slide;
 using ShopManagement.Domain.SlideAgg;
 using _01_LampShadeQuery.Contracts.Slide;
 using _01_LampShadeQuery.Query;
+using _01_LampShadeQuery.Contracts.ProductCategory;
 
 namespace ShopManagement.Configuration
 {
@@ -42,6 +43,9 @@ namespace ShopManagement.Configuration
             service.AddTransient<ISlideRepository, SlideRepository>();
 
             service.AddTransient<ISlideQuery, SlideQuery>();
+
+
+            service.AddTransient<IProductCategoryQuery,ProductCategoryQuery>();
 
             service.AddDbContext<ShopContext>(s=>s.UseSqlServer(connectionstring));
         }

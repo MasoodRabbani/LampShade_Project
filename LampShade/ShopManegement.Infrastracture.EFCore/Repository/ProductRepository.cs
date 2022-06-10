@@ -1,4 +1,5 @@
-﻿using _0_Framwork.Domain;
+﻿using _0_Framwork.Application;
+using _0_Framwork.Domain;
 using _0_Framwork.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.Product;
@@ -62,7 +63,7 @@ namespace ShopManegement.Infrastracture.EFCore.Repository
                 Category = p.ProductCategory.Name,
                 Code = p.Code,
                 CategoryId=p.CategoryId,
-                CreationDate=p.CreationDate.ToString(),
+                CreationDate=p.CreationDate.ToFarsi(),
                 IsStock=p.IsInStock
                 
             });
