@@ -32,7 +32,7 @@ namespace DiscountManagement.Infrastracture.EfCore.Repository
             }).FirstOrDefault(s => s.Id == Id);
         }
 
-        public List<ColleagueDiscountViewModel> Search(ColleageDiscountSearchModel model)
+        public List<ColleagueDiscountViewModel> Search(ColleagueDiscountSearchModel model)
         {
             var product = context2.Products.Select(s => new { Id = s.Id, Name = s.Name }).ToList();
             var query = context.ColleagueDiscounts.Select(s => new ColleagueDiscountViewModel
@@ -40,7 +40,8 @@ namespace DiscountManagement.Infrastracture.EfCore.Repository
                 Id = s.Id,
                 ProductId = s.ProductId,
                 DiscountRate = s.DiscountRate,
-                CreationDate = s.CreationDate.ToFarsi()
+                CreationDate = s.CreationDate.ToFarsi(),
+                IsRemoved=s.IsRemoved
             });
             if(model.ProductId>0)
                 query=query.Where(s => s.ProductId == model.ProductId);

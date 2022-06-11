@@ -18,7 +18,7 @@ namespace DiscountManagement.Application
             this.colleagueDiscountRepository = colleagueDiscountRepository;
         }
 
-        public OprationResult Define(DefintColleagueDiscount command)
+        public OprationResult Define(DefineColleagueDiscount command)
         {
             var oprationresult = new OprationResult();
             if (colleagueDiscountRepository.Exists(s=>s.ProductId==command.ProductId&&s.DiscountRate==command.DiscountRate))
@@ -69,7 +69,7 @@ namespace DiscountManagement.Application
             return oprationresult.Sucsseded();
         }
 
-        public List<ColleagueDiscountViewModel> Search(ColleageDiscountSearchModel model)
+        public List<ColleagueDiscountViewModel> Search(ColleagueDiscountSearchModel model)
         {
             return colleagueDiscountRepository.Search(model);
         }

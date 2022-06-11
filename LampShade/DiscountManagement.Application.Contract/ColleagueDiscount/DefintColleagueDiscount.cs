@@ -1,15 +1,20 @@
-﻿using ShopManagement.Application.Contracts.Product;
+﻿using _0_Framwork.Application;
+using ShopManagement.Application.Contracts.Product;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DiscountManagement.Application.Contract.ColleagueDiscount
 {
-    public class DefintColleagueDiscount
+    public class DefineColleagueDiscount
     {
+        [Range(1,10000,ErrorMessage =ValidaionMessages.IsRequired)]
         public long ProductId { get; set; }
+        [Range(1, 99, ErrorMessage = ValidaionMessages.IsRequired)]
+
         public int DiscountRate { get; set; }
         public List<ProductViewModel> Products { get; set; }
     }

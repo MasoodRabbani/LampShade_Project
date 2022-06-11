@@ -10,6 +10,6 @@ namespace Discount.Management.Domain.ColleagueDiscountAgg
     public interface IColleagueDiscountRepository: _0_Framwork.Domain.IRepository<long,ColleagueDiscount>
     {
         EditColleagueDiscount GetDeatails(long Id);
-        List<ColleagueDiscountViewModel> Search(ColleageDiscountSearchModel model);
+        List<ColleagueDiscountViewModel> Search(ColleagueDiscountSearchModel model);
     }
 }
