@@ -357,3 +357,9 @@ C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Se
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.EfCore.pdb
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\InventoryManagement.Application.dll
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\InventoryManagement.Application.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Create.cshtml.g.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Edit.cshtml.g.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Index.cshtml.g.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Increase.cshtml.g.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Reduce.cshtml.g.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\OprationLog.cshtml.g.cs

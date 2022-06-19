@@ -16,5 +16,6 @@ namespace InventoryManagement.Application.Contract.Inventory
         OprationResult Reduce(RecreaseInventory command);
         EditInventory GetDetails(long Id);
         List<InventoryViewModel> Search(InventorySearchModel model);
+        List<InventoryOprationViewModel> GetOprationLog(long InventoryId);
     }
 }

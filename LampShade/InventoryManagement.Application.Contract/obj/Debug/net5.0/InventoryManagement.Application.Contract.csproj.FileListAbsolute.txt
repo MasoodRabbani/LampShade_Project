@@ -13,3 +13,5 @@ C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\In
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\InventoryManagement.Application.Contract\obj\Debug\net5.0\refint\InventoryManagement.Application.Contract.dll
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.pdb
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\InventoryManagement.Application.Contract\obj\Debug\net5.0\ref\InventoryManagement.Application.Contract.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\InventoryManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\InventoryManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb

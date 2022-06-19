@@ -1,4 +1,5 @@
-﻿using _0_Framwork.Infrastructure;
+﻿using _0_Framwork.Application;
+using _0_Framwork.Infrastructure;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
 using ShopManegement.Infrastracture.EFCore;
@@ -34,6 +35,23 @@ namespace InventoryManagement.Infrastructure.EfCore.Repository
             }).FirstOrDefault(s=>s.Id==Id);
         }
 
+        public List<InventoryOprationViewModel> GetOprationLog(long InventoryId)
+        {
+            var inventory = context.Inventories.FirstOrDefault(s => s.Id == InventoryId);
+            return inventory.InventoryOperations.Select(s=>new InventoryOprationViewModel
+            {
+                Id = s.Id,
+                Count=s.Count,
+                CurrentCount=s.CurrentCount,
+                Description=s.Description,
+                OprationDate=s.OperationDate.ToFarsi(),
+                Operator="مدیر سیستم",
+                Operation=s.Operation,
+                OperatorId=s.OperatorId,
+                OrderId=s.OrderId,
+            }).OrderByDescending(s=>s.Id).ToList();
+        }
+
         public List<InventoryViewModel> Search(InventorySearchModel model)
         {
             var product = context2.Products.Select(s=>new {Id=s.Id,Name=s.Name}).ToList();
@@ -43,7 +61,8 @@ namespace InventoryManagement.Infrastructure.EfCore.Repository
                 UnitPrice = s.UnitPrice,
                 IsStock = s.IsStock,
                 ProductId = s.ProductId,
-                CurrentCount=s.CalculateInventoryStock()
+                CurrentCount=s.CalculateInventoryStock(),
+                CreationDate=s.CreationDate.ToFarsi()
             });
             if(model.ProductId>0)
                 query=query.Where(s=>s.ProductId==model.ProductId);

@@ -60,8 +60,6 @@
                                     <th>نام</th>
                                     <th>کد</th>
                                     <th>گروه</th>
-                                    <th>قیمت</th>
-                                    <th>موجودی</th>
                                     <th>تاریخ تولید</th>
                                     <th>عملیات</th>
                                 </tr>
@@ -78,18 +76,7 @@
                                     <td>@i.Name</td>
                                     <td>@i.Code</td>
                                     <td>@i.Category</td>
-                                    <td>@i.UnitPrice</td>
                                     <td class="text-center">
-                                        @if (i.IsStock)
-                                            {
-                                                <i class="fa fa-check fa-2x text-success"></i>
-                                            }else{
-
-                                            <i class="fa fa-remove fa-2x text-danger"></i>
-
-                                            }
-                                            
-                                        </td>
                                     <td>@i.CreationDate</td>
                                     <td>
                                         <a class="btn btn-warning btn-custom waves-effect waves-light m-b-5"
@@ -97,18 +84,7 @@
                                             <i class="fa fa-edit"></i>
                                             ویرایش
                                         </a>
-                                        @if (i.IsStock)
-                                        {
-                                            <a class="btn btn-danger btn-custom waves-effect waves-light m-b-5" asp-page="./Index" asp-page-handler="NotIsStock" asp-route-Id="@i.Id">
-                                            اتمام موجودی
-                                                </a>
-                                        }else{
-                                                    <a class="btn btn-success btn-custom waves-effect waves-light m-b-5" asp-page="./Index" asp-page-handler="IsStock" asp-route-Id="@i.Id">
-                                            موجود شد!
-                                                </a>
-                                       }
-
-                                    </td>
+                                     </td>
                                 </tr>
                             }
 

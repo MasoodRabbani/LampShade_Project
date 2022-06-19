@@ -65,25 +65,25 @@ namespace ServicesHost.Areas.Administration.Pages.Discount.CustomerDiscount
             var resuly = customerDiscountApplication.Edit(Command);
             return new JsonResult(resuly);
         }
-        public IActionResult OnGetNotIsStock(long Id)
-        {
-            var result = productApplication.NotInStock(Id);
-            if (result.IsSucsseded)
-            {
-                return RedirectToPage("./Index");
-            }
-            Message = result.Message;
-            return RedirectToPage("./Index");
-        }
-        public IActionResult OnGetIsStock(long Id)
-        {
-            var result = productApplication.InStock(Id);
-            if (result.IsSucsseded)
-            {
-                return RedirectToPage("./Index");
-            }
-            Message = result.Message;
-            return RedirectToPage("./Index");
-        }
+        //public IActionResult OnGetNotIsStock(long Id)
+        //{
+        //    var result = productApplication.NotInStock(Id);
+        //    if (result.IsSucsseded)
+        //    {
+        //        return RedirectToPage("./Index");
+        //    }
+        //    Message = result.Message;
+        //    return RedirectToPage("./Index");
+        //}
+        //public IActionResult OnGetIsStock(long Id)
+        //{
+        //    var result = productApplication.InStock(Id);
+        //    if (result.IsSucsseded)
+        //    {
+        //        return RedirectToPage("./Index");
+        //    }
+        //    Message = result.Message;
+        //    return RedirectToPage("./Index");
+        //}
     }
 }

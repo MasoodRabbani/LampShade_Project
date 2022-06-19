@@ -7,9 +7,7 @@ using ShopManagement.Domain.ProductAgg;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ShopManegement.Infrastracture.EFCore.Repository
 {
@@ -30,7 +28,6 @@ namespace ShopManegement.Infrastracture.EFCore.Repository
                 CategoryId = s.CategoryId,
                 Code = s.Code,
                 Description = s.Description,
-                IsInStock = s.IsInStock,
                 Keywords = s.Keywords,
                 MetaDescription = s.MetaDescription,
                 Picture=s.Picture,
@@ -38,7 +35,6 @@ namespace ShopManegement.Infrastracture.EFCore.Repository
                 PictureTitle = s.PictureTitle,
                 ShortDescription = s.ShortDescription,
                 Slug = s.Slug,
-                UnitPrice=s.UnitPrice
             }).FirstOrDefault(c => c.Id == id);
         }
 
@@ -58,13 +54,11 @@ namespace ShopManegement.Infrastracture.EFCore.Repository
             {
                 Id = p.Id,
                 Name = p.Name,
-                UnitPrice = p.UnitPrice,
                 Picture = p.Picture,
                 Category = p.ProductCategory.Name,
                 Code = p.Code,
                 CategoryId=p.CategoryId,
                 CreationDate=p.CreationDate.ToFarsi(),
-                IsStock=p.IsInStock
                 
             });
             if (!string.IsNullOrWhiteSpace(searchModel.Name))

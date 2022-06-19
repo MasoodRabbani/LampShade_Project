@@ -12,8 +12,6 @@ namespace ShopManagement.Domain.ProductAgg
     {
         public string Name { get; private set; }
         public string Code { get; private set; }
-        public double UnitPrice { get; private set; }
-        public bool IsInStock { get; private set; }
         public string Description { get; private set; }
         public string ShortDescription { get; private set; }
         public string Picture { get; private set; }
@@ -26,33 +24,13 @@ namespace ShopManagement.Domain.ProductAgg
         public ProductCategoryAgg.ProductCategory ProductCategory { get; private set; }
         public List<ProductPictureAgg.ProductPicture> ProductPictures { get; private set; }
 
-        public Product(string name, string code, double unitPrice, 
+        public Product(string name, string code, 
             string description, string shortDescription, string picture, 
             string pictureAlt, string pictureTitle, string slug, string keywords, 
             string metaDescription, long categoryId)
         {
             Name = name;
             Code = code;
-            UnitPrice = unitPrice;
-            Description = description;
-            ShortDescription = shortDescription;
-            Picture = picture;
-            PictureAlt = pictureAlt;
-            PictureTitle = pictureTitle;
-            Slug = slug;
-            Keywords = keywords;
-            MetaDescription = metaDescription;
-            CategoryId = categoryId;
-            IsInStock = true;
-        }
-        public void Edit(string name, string code, double unitPrice, 
-            string description, string shortDescription, string picture, 
-            string pictureAlt, string pictureTitle, string slug, string keywords, 
-            string metaDescription, long categoryId)
-        {
-            Name = name;
-            Code = code;
-            UnitPrice = unitPrice;
             Description = description;
             ShortDescription = shortDescription;
             Picture = picture;
@@ -63,12 +41,22 @@ namespace ShopManagement.Domain.ProductAgg
             MetaDescription = metaDescription;
             CategoryId = categoryId;
         }
-        public void InStock()
+        public void Edit(string name, string code,
+            string description, string shortDescription, string picture,
+            string pictureAlt, string pictureTitle, string slug, string keywords,
+            string metaDescription, long categoryId)
         {
-            IsInStock = true;
-        }public void NotInStock()
-        {
-            IsInStock = false;
+            Name = name;
+            Code = code;
+            Description = description;
+            ShortDescription = shortDescription;
+            Picture = picture;
+            PictureAlt = pictureAlt;
+            PictureTitle = pictureTitle;
+            Slug = slug;
+            Keywords = keywords;
+            MetaDescription = metaDescription;
+            CategoryId = categoryId;
         }
     }
 }
