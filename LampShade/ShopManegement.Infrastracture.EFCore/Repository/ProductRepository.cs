@@ -21,7 +21,8 @@ namespace ShopManegement.Infrastracture.EFCore.Repository
 
         public EditProduct GetDetails(long id)
         {
-            return context.Products.Select(s=>new EditProduct
+            var s=context.Products.FirstOrDefault(p => p.Id == id);
+            return new EditProduct
             {
                 Id = id,
                 Name = s.Name,
@@ -35,17 +36,18 @@ namespace ShopManegement.Infrastracture.EFCore.Repository
                 PictureTitle = s.PictureTitle,
                 ShortDescription = s.ShortDescription,
                 Slug = s.Slug,
-            }).FirstOrDefault(c => c.Id == id);
+            };
         }
 
         public List<ProductViewModel> GetProducts()
         {
-            return context.Products.Select(s=>new ProductViewModel
+            var result= context.Products.Select(s=>new ProductViewModel
             {
                 Id = s.Id,
                 Name = s.Name,
                 
             }).ToList();
+            return result;
         }
 
         public List<ProductViewModel> Search(ProductSearchModel searchModel)

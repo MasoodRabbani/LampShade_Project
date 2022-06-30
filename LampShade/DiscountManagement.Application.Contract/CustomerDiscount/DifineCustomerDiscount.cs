@@ -11,7 +11,7 @@ namespace DiscountManagement.Application.Contract.CustomerDiscount
 {
     public class DefineCustomerDiscount
     {
-        [Range(1,10000,ErrorMessage = ValidaionMessages.IsRequired)]
+        [Range(1,100000,ErrorMessage = ValidaionMessages.IsRequired)]
         public long ProductId { get; set; }
         [Range(1, 99, ErrorMessage = ValidaionMessages.IsRequired)]
 

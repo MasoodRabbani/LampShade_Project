@@ -26,6 +26,8 @@ namespace ShopManagement.Application.Contracts.ProductCategory
 
         public string Keywords { get;  set; }
         public string MetaDescription { get;  set; }
-        public string Slug { get; private set; }
+        [Required(ErrorMessage = ValidaionMessages.IsRequired)]
+
+        public string Slug { get; set; }
     }
 }

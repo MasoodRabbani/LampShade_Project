@@ -16,8 +16,8 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label asp-for="Name" class="control-label">نام</label>
-                    <input type="text" class="form-control" asp-for="Name">
+                    <label asp-for="Name" class="control-label" >نام</label>
+                    <input type="text" class="form-control" onchange="fillField('Name', 'Slug')" asp-for="Name">
                     <span asp-validation-for="Name" class="error"></span>
                 </div>
             </div><div class="col-md-6">

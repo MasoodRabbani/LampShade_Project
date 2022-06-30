@@ -62,7 +62,7 @@ namespace DiscountManagement.Infrastracture.EfCore.Repository
                 query = query.Where(s => s.EndDateGr > model.EndDate.ToGeorgianDateTime());
             }
             var discount = query.OrderByDescending(s => s.Id).ToList();
-            discount.ForEach(x => x.Product = product.FirstOrDefault(s => s.Id == x.Id)?.Name);
+            discount.ForEach(x => x.Product = product.FirstOrDefault(s => s.Id == x.ProductId).Name);
             return discount;
         }
     }

@@ -8,7 +8,7 @@ namespace InventoryManagement.Application.Contract.Inventory
 {
     public class CreateInventory
     {
-        [Range(1,10000,ErrorMessage =ValidaionMessages.IsRequired)]
+        [Range(1,100000,ErrorMessage =ValidaionMessages.IsRequired)]
         public long ProductId { get; set; }
         [Range(1, double.MaxValue, ErrorMessage = ValidaionMessages.IsRequired)]
 

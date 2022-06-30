@@ -2,7 +2,6 @@
 @model List<ProductCategoryQueryModel>
 
 
-
     <div class="category-area section-space">
         <div class="container">
             <div class="row">
@@ -16,7 +15,7 @@
                                 <!--=======  single category item  =======-->
                                 <div class="single-category-item">
                                     <div class="single-category-item__image">
-                                        <a asp-page="/ProductCategory" asp-route-Id="@i.Slug">
+                                        <a asp-page="/ProductCategory" asp-route-id="@i.Slug">
                                             <img src="@i.Picture" class="img-fluid" alt="@i.PictureAlt" title="@i.PictureTitle">
                                         </a>
                                     </div>

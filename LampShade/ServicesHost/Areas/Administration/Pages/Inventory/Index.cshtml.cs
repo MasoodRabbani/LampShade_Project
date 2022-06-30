@@ -19,7 +19,7 @@ namespace ServicesHost.Areas.Administration.Pages.Inventory
         public string Message { get; set; }
 
         public InventorySearchModel SearchModel;
-        public List<InventoryViewModel> modelview { get;  set; }
+        public List<InventoryViewModel> modelview;
 
 
         public SelectList Product;
