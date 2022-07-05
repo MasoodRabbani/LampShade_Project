@@ -38,7 +38,8 @@ namespace ShopManagement.Domain.ProductCategoryAgg
         {
             Name = name;
             Description = description;
-            Picture = piture;
+            if(Picture!=null)
+                Picture = piture;
             PictureAlt = pitureAlt;
             PictureTitle = pitureTitle;
             Keywords = keywords;

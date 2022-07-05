@@ -10,18 +10,21 @@ namespace ShopManegement.Application
     public class ProductCategoryApplication : IProductCategoryApplication
     {
         private readonly IProductCategoryRepository productCategoryRepository;
+        private readonly IFileUploader fileUploader;
 
-        public ProductCategoryApplication(IProductCategoryRepository productCategoryRepository)
+        public ProductCategoryApplication(IProductCategoryRepository productCategoryRepository, IFileUploader fileUploader)
         {
             this.productCategoryRepository = productCategoryRepository;
+            this.fileUploader = fileUploader;
         }
+
         public OprationResult Create(CreateProductCategory model)
         {
             var operationres = new OprationResult();
             if (productCategoryRepository.Exists(s=>s.Name==model.Name))
                 return operationres.Feiled(ApplicationMessages.DublicatedRecord);
             var slug = model.Slug.Slugify();
-            var productcategory = new ProductCategory(model.Name, model.Description, model.Picture, model.PictureAlt,
+            var productcategory = new ProductCategory(model.Name, model.Description, "", model.PictureAlt,
                 model.PictureTitle, model.Keywords, model.MetaDescription, slug);
             productCategoryRepository.Create(productcategory);
             productCategoryRepository.SaveChanges();
@@ -37,7 +40,9 @@ namespace ShopManegement.Application
             if (productCategoryRepository.Exists(s => s.Name == model.Name && s.Id != model.Id))
                 return opration.Feiled(ApplicationMessages.RecordNotFound);
             var slug = model.Slug.Slugify();
-            productcategory.Edit(model.Name, model.Description, model.Picture, model.PictureAlt,
+            var namefolder = slug;
+            var fileuploader = fileUploader.Upload(model.Picture,namefolder);
+            productcategory.Edit(model.Name, model.Description, fileuploader, model.PictureAlt,
                 model.PictureTitle, model.Keywords, model.MetaDescription, slug);
             productCategoryRepository.SaveChanges();
             return opration.Sucsseded();

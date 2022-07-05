@@ -37,7 +37,7 @@ namespace _01_LampShadeQuery.Query
                 PictureAlt = s.PictureAlt,
                 PictureTitle = s.PictureTitle,
                 Slug = s.Slug,
-            }).ToList();
+            }).AsNoTracking().ToList();
         }
 
         public List<ProductCategoryQueryModel> GetProductCategoriesWithProducts()
@@ -54,7 +54,7 @@ namespace _01_LampShadeQuery.Query
                 Id = s.Id,
                 Products = MapProducts(s.Products),
                 Name = s.Name,
-            }).ToList();
+            }).AsNoTracking().ToList();
             foreach (var subcat in category)
             {
                 foreach (var item in subcat.Products)
@@ -122,7 +122,7 @@ namespace _01_LampShadeQuery.Query
                     MetaDescription= s.MetaDescription,
                     Slug = s.Slug,
                     Keyword=s.Keywords
-                }).FirstOrDefault(s=>s.Slug==slug);
+                }).AsNoTracking().FirstOrDefault(s=>s.Slug==slug);
                 foreach (var item in category.Products)
                 {
                     var price = inventory.FirstOrDefault(s => s.ProductId == item.Id)?.UnitPrice;

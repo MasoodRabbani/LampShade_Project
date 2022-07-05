@@ -46,6 +46,10 @@ namespace ServicesHost.Areas.Administration.Pages.Shop.ProductCategorys
 
         public IActionResult OnPostEdit(EditProductCategory Command)
         {
+            if (!ModelState.IsValid)
+            {
+                return RedirectToPage("./Index");
+            }
             var resuly = productcategoryapplication.Edit(Command);
             return new JsonResult(resuly);
         }

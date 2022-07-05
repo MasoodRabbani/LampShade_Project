@@ -25,6 +25,47 @@ namespace _01_LampShadeQuery.Query
             this.discountContext = discountContext;
         }
 
+        public ProductQueryModel GetDetails(string slug)
+        {
+            var product = shopContext.Products.Include(s => s.ProductCategory).Select(s => new ProductQueryModel
+            {
+                Id = s.Id,
+                Category = s.ProductCategory.Name,
+                Picture = s.Picture,
+                PictureAlt = s.PictureAlt,
+                PictureTitle = s.PictureTitle,
+                ShortDescription=s.ShortDescription,
+                Code=s.Code,
+                KeyWords=s.Keywords,
+                Sluge = s.Slug,
+            }).FirstOrDefault(s => s.Sluge == slug);
+            if (shopContext.ProductPictures.Any(s=>s.ProductId==product.Id))
+            {
+                product.ProductPicture = shopContext.ProductPictures.Where(s => s.ProductId == product.Id).Select(s => new { s.Picture }.ToString()).ToArray();
+            }
+            var inventory = inventoryContext.Inventories.Select(s => new { s.ProductId, s.UnitPrice ,s.IsStock}).FirstOrDefault(s => s.ProductId == product.Id);
+            var discount = discountContext.CustomerDiscounts
+                .Where(s => s.StartDate < DateTime.Now && s.EndDate > DateTime.Now)
+                .Select(s => new { s.ProductId, s.DiscountRate, s.EndDate })
+                .FirstOrDefault(s => s.ProductId == product.Id);
+            if (inventory!=null)
+            {
+                product.IsInStack = inventory.IsStock;
+                product.Price = inventory.UnitPrice.ToMoney();
+                if (discount!=null)
+                {
+                    product.DiscountRate = discount.DiscountRate;
+                    product.HasDiscount = product.DiscountRate > 0;
+                    var discoutamount = Math.Round((inventory.UnitPrice * discount.DiscountRate) / 100);
+                    product.PriceWithDiscount = (inventory.UnitPrice- discoutamount).ToMoney();
+                }
+
+            }
+            return product;
+                
+
+        }
+
         public List<ProductQueryModel> GetLatestArrivals()
         {
             var product = shopContext.Products.Include(s => s.ProductCategory)
@@ -59,6 +100,52 @@ namespace _01_LampShadeQuery.Query
 
 
             return product;
+        }
+
+        public List<ProductQueryModel> Search(string value)
+        {
+            var inventory = inventoryContext.Inventories.Select(s => new { s.ProductId, s.UnitPrice }).ToList();
+            var discount = discountContext.CustomerDiscounts
+                .Where(s => s.StartDate < DateTime.Now && s.EndDate > DateTime.Now)
+                .Select(s => new { s.ProductId, s.DiscountRate, s.EndDate }).ToList();
+            var query = shopContext.Products
+                .Include(s => s.ProductCategory)
+                .Select(s => new ProductQueryModel
+                {
+                    Id = s.Id,
+                    Category=s.ProductCategory.Name,
+                    Picture=s.Picture,
+                    PictureAlt=s.PictureAlt,
+                    PictureTitle=s.PictureTitle,
+                    CategorySlug=s.ProductCategory.Slug,
+                    Name = s.Name,
+                    ShortDescription=s.ShortDescription,
+                    Sluge = s.Slug,
+                }).AsNoTracking();
+            if (!string.IsNullOrWhiteSpace(value))
+            {
+                query=query.Where(s=>s.Name.Contains(value)||s.ShortDescription.Contains(value));
+            }
+            var products = query.OrderByDescending(s => s.Id).ToList();
+            foreach (var item in products)
+            {
+                var price = inventory.FirstOrDefault(s => s.ProductId == item.Id)?.UnitPrice;
+                if (price != null)
+                {
+                    item.Price = price.Value.ToMoney();
+                    var Discount = discount.FirstOrDefault(s => s.ProductId == item.Id);
+                    if (Discount != null)
+                    {
+                        int DiscountRate = Discount.DiscountRate;
+                        item.DiscountRate = DiscountRate;
+                        item.DiscountExpireDate = Discount.EndDate.ToDiscountFormat();
+                        item.HasDiscount = item.DiscountRate > 0;
+                        var discoutamount = Math.Round((price.Value * DiscountRate) / 100);
+                        item.PriceWithDiscount = (price.Value - discoutamount).ToMoney();
+                    }
+                }
+            }
+            return products;
         }
     }
 }

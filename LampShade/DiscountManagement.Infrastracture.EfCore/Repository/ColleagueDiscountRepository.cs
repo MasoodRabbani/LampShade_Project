@@ -46,7 +46,7 @@ namespace DiscountManagement.Infrastracture.EfCore.Repository
             if(model.ProductId>0)
                 query=query.Where(s => s.ProductId == model.ProductId);
             var discount = query.OrderByDescending(s => s.Id).ToList();
-            discount.ForEach(s => s.Product = product.FirstOrDefault(s => s.Id == model.ProductId)?.Name);
+            discount.ForEach(s => s.Product = product.FirstOrDefault(x => x.Id==s.ProductId).Name);
             return discount;
         }
     }
