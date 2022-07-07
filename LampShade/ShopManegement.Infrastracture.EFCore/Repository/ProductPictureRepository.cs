@@ -25,11 +25,17 @@ namespace ShopManegement.Infrastracture.EFCore.Repository
             return context.ProductPictures.Select(p => new EditProductPicture
             {
                 Id = p.Id,
-                Picture = p.Picture,
                 PictureAlt = p.PictureAlt,
                 ProductId = p.ProductId,
                 PictureTitle = p.PictureTitle
             }).FirstOrDefault(s => s.Id == Id);
+        }
+
+        public ProductPicture GetProductAndCategory(long id)
+        {
+            return context.ProductPictures.Include(s=>s.Product)
+                .ThenInclude(s=>s.ProductCategory)
+                .FirstOrDefault(s => s.Id == id); 
         }
 
         public List<ProductPictureViewModel> Search(ProductPictureSearchModel searchModel)
@@ -38,6 +44,7 @@ namespace ShopManegement.Infrastracture.EFCore.Repository
             {
                 Id = s.Id,
                 CreationDate = s.CreationDate.ToFarsi(),
+                
                 Picture = s.Picture,
                 ProductId = s.ProductId,
                 Product=s.Product.Name,

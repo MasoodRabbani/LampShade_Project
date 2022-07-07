@@ -24,7 +24,9 @@ namespace ShopManegement.Application
             if (productCategoryRepository.Exists(s=>s.Name==model.Name))
                 return operationres.Feiled(ApplicationMessages.DublicatedRecord);
             var slug = model.Slug.Slugify();
-            var productcategory = new ProductCategory(model.Name, model.Description, "", model.PictureAlt,
+            var namefolder = slug;
+            var fileuploader = fileUploader.Upload(model.Picture, namefolder);
+            var productcategory = new ProductCategory(model.Name, model.Description, fileuploader, model.PictureAlt,
                 model.PictureTitle, model.Keywords, model.MetaDescription, slug);
             productCategoryRepository.Create(productcategory);
             productCategoryRepository.SaveChanges();

@@ -62,18 +62,18 @@
                                 <tr>
                                     <td>@(++j)</td>
                                     <td>
-                                        <img src="@i.Picture" style="width: 70px; height: 70px"/>
+                                        <img src="/ProductPicture/@i.Picture" style="width: 70px; height: 70px"/>
                                     </td>
-                                    <td>@i.Picture</td>
+                                    <td>@i.Product</td>
                                     <td class="text-center">
                                         @if (!i.IsRemoved)
-                                            {
+                                        {
                                                 <i class="fa fa-check fa-2x text-success"></i>
-                                            }else{
+                                        }else{
 
                                             <i class="fa fa-remove fa-2x text-danger"></i>
 
-                                            }
+                                        }
                                             
                                         </td>
                                     <td>@i.CreationDate</td>
