@@ -17,7 +17,7 @@ namespace ServicesHost.Areas.Administration.Pages.Shop.Product
         public string Message { get; set; }
 
         public ProductSearchModel SearchModel;
-        public List<ProductViewModel> modelview { get; private set; }
+        public List<ProductViewModel> modelview { get; set; }
 
 
         public SelectList ProductCategorys;

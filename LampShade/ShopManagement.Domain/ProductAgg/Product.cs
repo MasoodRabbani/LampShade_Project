@@ -23,6 +23,7 @@ namespace ShopManagement.Domain.ProductAgg
         public long CategoryId { get; private set; }
         public ProductCategoryAgg.ProductCategory ProductCategory { get; set; }
         public List<ProductPictureAgg.ProductPicture> ProductPictures { get; set; }
+        public List<CommentAgg.Comment> Comments { get; set; }
 
         public Product(string name, string code, 
             string description, string shortDescription, string picture, 

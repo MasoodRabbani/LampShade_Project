@@ -3,6 +3,8 @@ using _01_LampShadeQuery.Contracts.Product;
 using DiscountManagement.Infrastracture.EfCore;
 using InventoryManagement.Infrastructure.EfCore;
 using Microsoft.EntityFrameworkCore;
+using ShopManagement.Domain.CommentAgg;
+using ShopManagement.Domain.ProductPictureAgg;
 using ShopManegement.Infrastracture.EFCore;
 using System;
 using System.Collections.Generic;
@@ -27,22 +29,24 @@ namespace _01_LampShadeQuery.Query
 
         public ProductQueryModel GetDetails(string slug)
         {
-            var product = shopContext.Products.Include(s => s.ProductCategory).Select(s => new ProductQueryModel
-            {
-                Id = s.Id,
-                Category = s.ProductCategory.Name,
-                Picture = s.Picture,
-                PictureAlt = s.PictureAlt,
-                PictureTitle = s.PictureTitle,
-                ShortDescription=s.ShortDescription,
-                Code=s.Code,
-                KeyWords=s.Keywords,
+            var product = shopContext.Products
+                .Include(s => s.ProductCategory)
+                .Include(s => s.Comments)
+                .Select(s => new ProductQueryModel
+                {
+                    Id = s.Id,
+                    Category = s.ProductCategory.Name,
+                    Picture = s.Picture,
+                    PictureAlt = s.PictureAlt,
+                    PictureTitle = s.PictureTitle,
+                    ShortDescription = s.ShortDescription,
+                    Code = s.Code,
+                    KeyWords = s.Keywords,
+                    Description = s.Description,
+                    Pictures = MapProductPicture(s.ProductPictures),
+                    Comments = MapComments(s.Comments),
                 Sluge = s.Slug,
-            }).FirstOrDefault(s => s.Sluge == slug);
-            if (shopContext.ProductPictures.Any(s=>s.ProductId==product.Id))
-            {
-                product.ProductPicture = shopContext.ProductPictures.Where(s => s.ProductId == product.Id).Select(s => new { s.Picture }.ToString()).ToArray();
-            }
+                }).FirstOrDefault(s => s.Sluge == slug);
             var inventory = inventoryContext.Inventories.Select(s => new { s.ProductId, s.UnitPrice ,s.IsStock}).FirstOrDefault(s => s.ProductId == product.Id);
             var discount = discountContext.CustomerDiscounts
                 .Where(s => s.StartDate < DateTime.Now && s.EndDate > DateTime.Now)
@@ -54,6 +58,7 @@ namespace _01_LampShadeQuery.Query
                 product.Price = inventory.UnitPrice.ToMoney();
                 if (discount!=null)
                 {
+                    product.DiscountExpireDate = discount.EndDate.ToDiscountFormat();
                     product.DiscountRate = discount.DiscountRate;
                     product.HasDiscount = product.DiscountRate > 0;
                     var discoutamount = Math.Round((inventory.UnitPrice * discount.DiscountRate) / 100);
@@ -64,6 +69,27 @@ namespace _01_LampShadeQuery.Query
             return product;
                 
 
+        }
+
+        private static List<CommentQueryModel> MapComments(List<Comment> comments)
+        {
+            return comments.Where(s => s.IsConfirmed).Select(s => new CommentQueryModel
+            {
+                Id = s.Id,
+                Message = s.Message,
+                Name = s.Name
+            }).ToList();
+        }
+
+        private static List<ProductPictureQueryModel> MapProductPicture(List<ProductPicture> productPictures)
+        {
+            return productPictures.Select(s => new ProductPictureQueryModel
+            {
+                ProductId = s.ProductId,
+                Picture = s.Picture,
+                PictureAlt = s.PictureAlt,
+                PictureTitle = s.PictureTitle
+            }).ToList();
         }
 
         public List<ProductQueryModel> GetLatestArrivals()
