@@ -375,3 +375,16 @@ C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Se
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\System.IO.Pipelines.dll
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\ServicesHost.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Comments\Index.cshtml.g.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\BlogManagement.Application.Contracts.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\BlogManagement.Application.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\BlogManagement.Domain.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\BlogManagement.Infracture.Configuration.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\BlogManagement.Infracture.EfCore.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\BlogManagement.Infracture.Configuration.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\BlogManagement.Application.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\BlogManagement.Application.Contracts.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\BlogManagement.Domain.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\BlogManagement.Infracture.EfCore.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\ArticleCategory\Create.cshtml.g.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\ArticleCategory\Edit.cshtml.g.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\ArticleCategory\Index.cshtml.g.cs

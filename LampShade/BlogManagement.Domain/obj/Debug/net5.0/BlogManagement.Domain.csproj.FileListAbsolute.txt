@@ -1,0 +1,17 @@
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\bin\Debug\net5.0\BlogManagement.Domain.deps.json
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\bin\Debug\net5.0\BlogManagement.Domain.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\bin\Debug\net5.0\BlogManagement.Domain.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\bin\Debug\net5.0\0_Framwork.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\bin\Debug\net5.0\BlogManagement.Application.Contracts.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\bin\Debug\net5.0\0_Framwork.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\bin\Debug\net5.0\BlogManagement.Application.Contracts.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\obj\Debug\net5.0\BlogManagement.Domain.csproj.AssemblyReference.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\obj\Debug\net5.0\BlogManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\obj\Debug\net5.0\BlogManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\obj\Debug\net5.0\BlogManagement.Domain.AssemblyInfo.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\obj\Debug\net5.0\BlogManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\obj\Debug\net5.0\BlogManagement.Domain.csproj.CopyComplete
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\obj\Debug\net5.0\BlogManagement.Domain.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\obj\Debug\net5.0\refint\BlogManagement.Domain.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\obj\Debug\net5.0\BlogManagement.Domain.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\BlogManagement.Domain\obj\Debug\net5.0\ref\BlogManagement.Domain.dll

@@ -56,7 +56,7 @@ namespace ShopManegement.Application
         public OprationResult Remove(long Id)
         {
             var oprationresult = new OprationResult();
-            var result = productPictureRepository.Get(Id);
+            var result = productPictureRepository.GetCategoryBy(Id);
             if (result == null)
                 return oprationresult.Feiled(ApplicationMessages.RecordNotFound);
             result.Remove();
@@ -67,7 +67,7 @@ namespace ShopManegement.Application
         public OprationResult Restore(long Id)
         {
             var oprationresult = new OprationResult();
-            var result = productPictureRepository.Get(Id);
+            var result = productPictureRepository.GetCategoryBy(Id);
             if (result == null)
                 return oprationresult.Feiled(ApplicationMessages.RecordNotFound);
             result.Restore();

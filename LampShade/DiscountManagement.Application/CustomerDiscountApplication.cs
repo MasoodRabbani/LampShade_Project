@@ -35,7 +35,7 @@ namespace DiscountManagement.Application
         public OprationResult Edit(EditCustomerDiscount command)
         {
             var oprationresult = new OprationResult();
-            var customerdiscunt=customerDicountRepository.Get(command.Id);
+            var customerdiscunt=customerDicountRepository.GetCategoryBy(command.Id);
             if (customerdiscunt==null)
                 return oprationresult.Feiled(ApplicationMessages.RecordNotFound);
             if (customerDicountRepository.Exists(s => s.ProductId == command.ProductId && s.DiscountRate == command.DiscountRate&&s.Id!=command.Id))

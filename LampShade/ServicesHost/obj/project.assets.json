@@ -2127,6 +2127,79 @@
           "bin/placeholder/0_Framwork.dll": {}
         }
       },
+      "BlogManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BlogManagement.Application.Contracts": "1.0.0",
+          "BlogManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Application.dll": {}
+        }
+      },
+      "BlogManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framwork": "1.0.0",
+          "Microsoft.AspNetCore.Http.Features": "5.0.17"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Application.Contracts.dll": {}
+        }
+      },
+      "BlogManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framwork": "1.0.0",
+          "BlogManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Domain.dll": {}
+        }
+      },
+      "BlogManagement.Infracture.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BlogManagement.Application": "1.0.0",
+          "BlogManagement.Domain": "1.0.0",
+          "BlogManagement.Infracture.EfCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Infracture.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Infracture.Configuration.dll": {}
+        }
+      },
+      "BlogManagement.Infracture.EfCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BlogManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-preview.6.20312.4"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Infracture.EfCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Infracture.EfCore.dll": {}
+        }
+      },
       "Discount.Management.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -7563,6 +7636,31 @@
       "path": "../0_Framwork/0_Framwork.csproj",
       "msbuildProject": "../0_Framwork/0_Framwork.csproj"
     },
+    "BlogManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Application/BlogManagement.Application.csproj",
+      "msbuildProject": "../BlogManagement.Application/BlogManagement.Application.csproj"
+    },
+    "BlogManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Application.Contracts/BlogManagement.Application.Contracts.csproj",
+      "msbuildProject": "../BlogManagement.Application.Contracts/BlogManagement.Application.Contracts.csproj"
+    },
+    "BlogManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Domain/BlogManagement.Domain.csproj",
+      "msbuildProject": "../BlogManagement.Domain/BlogManagement.Domain.csproj"
+    },
+    "BlogManagement.Infracture.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Infracture.Configuration/BlogManagement.Infracture.Configuration.csproj",
+      "msbuildProject": "../BlogManagement.Infracture.Configuration/BlogManagement.Infracture.Configuration.csproj"
+    },
+    "BlogManagement.Infracture.EfCore/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Infracture.EfCore/BlogManagement.Infracture.EfCore.csproj",
+      "msbuildProject": "../BlogManagement.Infracture.EfCore/BlogManagement.Infracture.EfCore.csproj"
+    },
     "Discount.Management.Domain/1.0.0": {
       "type": "project",
       "path": "../Discount.Management.Domain/Discount.Management.Domain.csproj",
@@ -7641,6 +7739,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "BlogManagement.Infracture.Configuration >= 1.0.0",
       "DiscountManagementConfiguration.Bootstrapper >= 1.0.0",
       "InventoryManagement.Infrasturcture.Configuration >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0-preview.6.20312.4",
@@ -7675,6 +7774,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\BlogManagement.Infracture.Configuration\\BlogManagement.Infracture.Configuration.csproj": {
+              "projectPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\BlogManagement.Infracture.Configuration\\BlogManagement.Infracture.Configuration.csproj"
+            },
             "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\DiscountManagementConfiguration.Bootstrapper\\DiscountManagementConfiguration.Bootstrapper.csproj": {
               "projectPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\DiscountManagementConfiguration.Bootstrapper\\DiscountManagementConfiguration.Bootstrapper.csproj"
             },

@@ -30,7 +30,7 @@ namespace InventoryManagement.Application
         public OprationResult Edit(EditInventory command)
         {
             var oprationresult = new OprationResult();
-            var inventory=inventoryRepository.Get(command.Id);
+            var inventory=inventoryRepository.GetCategoryBy(command.Id);
             if (inventory == null)
                 return oprationresult.Feiled(ApplicationMessages.RecordNotFound);
             if (inventoryRepository.Exists(s => s.ProductId == command.ProductId&&s.Id!=command.Id))
@@ -53,7 +53,7 @@ namespace InventoryManagement.Application
         public OprationResult Increase(IncreaseInventory command)
         {
             var oprationresult = new OprationResult();
-            var inventory = inventoryRepository.Get(command.InventoryId);
+            var inventory = inventoryRepository.GetCategoryBy(command.InventoryId);
             if (inventory == null)
                 return oprationresult.Feiled(ApplicationMessages.RecordNotFound);
             const long operatorid = 1;
@@ -77,7 +77,7 @@ namespace InventoryManagement.Application
         public OprationResult Reduce(RecreaseInventory command)
         {
             var oprationresult = new OprationResult();
-            var inventory = inventoryRepository.Get(command.InventoryId);
+            var inventory = inventoryRepository.GetCategoryBy(command.InventoryId);
             if (inventory == null)
                 return oprationresult.Feiled(ApplicationMessages.RecordNotFound);
             const long operatorid = 1;

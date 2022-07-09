@@ -30,7 +30,7 @@ namespace ShopManegement.Application
         public OprationResult Cancel(long Id)
         {
             OprationResult result = new OprationResult();
-            var comment=commentRepository.Get(Id);
+            var comment=commentRepository.GetCategoryBy(Id);
             if (comment == null)
                 return result.Feiled(ApplicationMessages.RecordNotFound);
             comment.Cancel();
@@ -41,7 +41,7 @@ namespace ShopManegement.Application
         public OprationResult Confirm(long Id)
         {
             OprationResult result = new OprationResult();
-            var comment = commentRepository.Get(Id);
+            var comment = commentRepository.GetCategoryBy(Id);
             if (comment == null)
                 return result.Feiled(ApplicationMessages.RecordNotFound);
             comment.Confirm();

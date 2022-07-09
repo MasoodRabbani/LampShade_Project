@@ -32,7 +32,7 @@ namespace DiscountManagement.Application
         public OprationResult Edit(EditColleagueDiscount command)
         {
             var oprationresult = new OprationResult();
-            var colleague=colleagueDiscountRepository.Get(command.Id);
+            var colleague=colleagueDiscountRepository.GetCategoryBy(command.Id);
             if (colleague == null)
                 return oprationresult.Feiled(ApplicationMessages.RecordNotFound);
             if (colleagueDiscountRepository.Exists(s => s.ProductId == command.ProductId && s.DiscountRate == command.DiscountRate&&s.Id!=command.Id))
@@ -50,7 +50,7 @@ namespace DiscountManagement.Application
         public OprationResult Remove(long Id)
         {
             var oprationresult = new OprationResult();
-            var colleague = colleagueDiscountRepository.Get(Id);
+            var colleague = colleagueDiscountRepository.GetCategoryBy(Id);
             if (colleague == null)
                 return oprationresult.Feiled(ApplicationMessages.RecordNotFound);
             colleague.Remove();
@@ -61,7 +61,7 @@ namespace DiscountManagement.Application
         public OprationResult Restore(long Id)
         {
             var oprationresult = new OprationResult();
-            var colleague = colleagueDiscountRepository.Get(Id);
+            var colleague = colleagueDiscountRepository.GetCategoryBy(Id);
             if (colleague == null)
                 return oprationresult.Feiled(ApplicationMessages.RecordNotFound);
             colleague.Restore();

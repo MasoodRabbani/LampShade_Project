@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using _0_Framwork.Application;
+using BlogManagement.Infracture.Configuration;
 using DiscountManagementConfiguration.Bootstrapper;
 using InventoryManagement.Infrasturcture.Configuration;
 using Microsoft.AspNetCore.Builder;
@@ -32,6 +33,7 @@ namespace ServicesHost
             ShopManagementBootstrapper.Configure(services,connectingstring);
             DiscountManagementBootstrapper.Configuration(services,connectingstring);
             InventoryManagementBootstrapper.Configuration(services, connectingstring);
+            BlogManagementBootstrapper.Configuration(services, connectingstring);
             services.AddTransient<IFileUploader,FileUploader>();
             
             
