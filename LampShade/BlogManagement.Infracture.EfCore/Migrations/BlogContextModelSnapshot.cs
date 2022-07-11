@@ -43,7 +43,7 @@ namespace BlogManagement.Infracture.EfCore.Migrations
                         .HasColumnType("nvarchar(150)")
                         .HasMaxLength(150);
 
-                    b.Property<string>("MrtaDescription")
+                    b.Property<string>("MetaDescription")
                         .HasColumnType("nvarchar(150)")
                         .HasMaxLength(150);
 

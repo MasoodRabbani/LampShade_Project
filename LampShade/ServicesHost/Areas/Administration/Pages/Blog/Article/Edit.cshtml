@@ -1,0 +1,127 @@
+﻿@page
+@model Areas.Administration.Pages.Blog.Article.EditModel
+@{
+    TempData["Title"] = "ویرایش مقاله";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">ویرایش مقاله : @Model.command.Title</h3>
+            </div>
+            <div class="panel-body">
+                <form method="post"
+      enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="command.Title" class="control-label">نام</label>
+                    <input type="text" class="form-control" asp-for="command.Title" id="@nameof(Model.command.Title)" onchange="makeSlug('@nameof(Model.command.Title)', '@nameof(Model.command.Slug)')">
+                    <span asp-validation-for="command.Title" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="command.Slug" class="control-label">اسلاگ</label>
+                    <input type="text" class="form-control" asp-for="command.Slug" id="@nameof(Model.command.Slug)">
+                    <span asp-validation-for="command.Slug" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="command.PublishDate" class="control-label">تاریخ انتشار</label>
+                    <input class="form-control persianDateInput" asp-for="command.PublishDate">
+                    <span asp-validation-for="command.PublishDate" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="command.Picture" class="control-label">عکس</label>
+                    <input type="file" class="form-control" asp-for="command.Picture" accept="image/*">
+                    <span asp-validation-for="command.Picture" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="command.CategoryId" class="control-label">ترتیب نمایش</label>
+                    <select class="form-control" asp-for="command.CategoryId" asp-items="Model.Category">
+                        <option value="0">گروه مقالات</option>
+                    </select>
+                    <span asp-validation-for="command.CategoryId" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="command.PictureAlt" class="control-label">Alt</label>
+                    <input type="text" class="form-control" asp-for="command.PictureAlt">
+                    <span asp-validation-for="command.PictureAlt" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="command.PictureTitle" class="control-label">عنوان</label>
+                    <input type="text" class="form-control" asp-for="command.PictureTitle">
+                    <span asp-validation-for="command.PictureTitle" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group no-margin">
+                    <label asp-for="command.ShortDescription" class="control-label">توضیحات کوتاه</label>
+                    <textarea class="form-control autogrow" asp-for="command.ShortDescription" id="@nameof(Model.command.ShortDescription)"onchange="fillField('@nameof(Model.command.ShortDescription)', '@nameof(Model.command.MetaDescription)')"
+                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                    <span asp-validation-for="command.ShortDescription" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group no-margin">
+                    <label asp-for="command.Description" class="control-label">توضیحات</label>
+                    <textarea class="form-control autogrow" asp-for="command.Description" id="BodyContent"></textarea>
+                    <span asp-validation-for="command.Description" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="command.Keywords" class="control-label">کلمات کلیدی</label>
+                    <input type="text" class="form-control" asp-for="command.Keywords">
+                    <span asp-validation-for="command.Keywords" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group no-margin">
+                    <label asp-for="command.MetaDescription" class="control-label">توضیحات متا</label>
+                    <textarea class="form-control" asp-for="command.MetaDescription" id="@nameof(Model.command.MetaDescription)"
+                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                    <span asp-validation-for="command.MetaDescription" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="command.CanonalAddress" class="control-label">CanonalAddress</label>
+                    <input type="text" class="form-control" asp-for="command.CanonalAddress">
+                    <span asp-validation-for="command.CanonalAddress" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" asp-for="command.Id" value="@Model.command.Id" />
+        <button type="submit" class="btn btn-success btn-custom waves-effect waves-light">ویرایش</button>
+        <a asp-page="./Index" class="btn btn-primary btn-custom waves-effect waves-light">بازگشت</a>
+</form>
+            </div>
+        </div>
+    </div>
+</div>

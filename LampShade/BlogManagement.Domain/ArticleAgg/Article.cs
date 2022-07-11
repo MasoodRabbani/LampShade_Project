@@ -20,14 +20,14 @@ namespace BlogManagement.Domain.ArticleAgg
         public string Slug { get; private set; }
         public DateTime PublishDate { get; private set; }
         public string Keywords { get; private set; }
-        public string MrtaDescription { get; private set; }
+        public string MetaDescription { get; private set; }
         public string CanonalAddress { get; private set; }
         public ArticleCategoryAgg.ArticleCategory ArticleCategory { get; set; }
 
         public Article(long categoryId, string title, string shortDescription,
             string description, string picture, string pictureAlt, 
-            string pictureTitle, string slug, DateTime publishDate,
-            string keywords, string mrtaDescription, string canonalAddress)
+            string pictureTitle, string slug, DateTime publishDate, 
+            string keywords, string metaDescription, string canonalAddress)
         {
             CategoryId = categoryId;
             Title = title;
@@ -39,7 +39,7 @@ namespace BlogManagement.Domain.ArticleAgg
             Slug = slug;
             PublishDate = publishDate;
             Keywords = keywords;
-            MrtaDescription = mrtaDescription;
+            MetaDescription = metaDescription;
             CanonalAddress = canonalAddress;
         }
 
@@ -57,7 +57,7 @@ namespace BlogManagement.Domain.ArticleAgg
             PictureTitle = pictureTitle;
             Slug = slug;
             Keywords = keywords;
-            MrtaDescription = mrtaDescription;
+            MetaDescription = mrtaDescription;
             CanonalAddress = canonalAddress;
             PublishDate = publishdate;
         }

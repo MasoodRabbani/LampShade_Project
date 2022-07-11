@@ -67,19 +67,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlogManagement", "BlogManag
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BM.Domain", "BM.Domain", "{A251B735-A722-48AA-859F-E709AB4750F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogManagement.Domain", "BlogManagement.Domain\BlogManagement.Domain.csproj", "{A5ECEA9B-AE2B-4A36-8EAF-771EFC692CFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagement.Domain", "BlogManagement.Domain\BlogManagement.Domain.csproj", "{A5ECEA9B-AE2B-4A36-8EAF-771EFC692CFC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BM.Application", "BM.Application", "{3DAF656E-9A7A-40D6-B8C6-3717DDBA0B4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogManagement.Application.Contracts", "BlogManagement.Application.Contracts\BlogManagement.Application.Contracts.csproj", "{802348C8-0883-482A-934E-0E4B3BEE49F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagement.Application.Contracts", "BlogManagement.Application.Contracts\BlogManagement.Application.Contracts.csproj", "{802348C8-0883-482A-934E-0E4B3BEE49F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogManagement.Application", "BlogManagement.Application\BlogManagement.Application.csproj", "{23210694-8967-4270-8045-7AC6C55408B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagement.Application", "BlogManagement.Application\BlogManagement.Application.csproj", "{23210694-8967-4270-8045-7AC6C55408B2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BM.Infrastracture", "BM.Infrastracture", "{F31D6570-67A0-4A61-ACF9-6F2EAF6194F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogManagement.Infracture.EfCore", "BlogManagement.Infracture.EfCore\BlogManagement.Infracture.EfCore.csproj", "{DCA65E82-854E-4114-8C58-198988F6EA7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagement.Infracture.EfCore", "BlogManagement.Infracture.EfCore\BlogManagement.Infracture.EfCore.csproj", "{DCA65E82-854E-4114-8C58-198988F6EA7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogManagement.Infracture.Configuration", "BlogManagement.Infracture.Configuration\BlogManagement.Infracture.Configuration.csproj", "{CE6A69CC-227D-43B7-8D38-DA7AE00E4854}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagement.Infracture.Configuration", "BlogManagement.Infracture.Configuration\BlogManagement.Infracture.Configuration.csproj", "{CE6A69CC-227D-43B7-8D38-DA7AE00E4854}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

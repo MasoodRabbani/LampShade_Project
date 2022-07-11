@@ -21,6 +21,12 @@ namespace BlogManagement.Infracture.EfCore.Repository
             this.context = context;
         }
 
+        public List<ArticleCategoryViewModel> GetArticleCategory()
+        {
+            return context.ArticleCategories
+                .Select(s => new ArticleCategoryViewModel { Id = s.Id, Name = s.Name }).ToList();
+        }
+
         public EditArticleCategory GetDetails(long id)
         {
             return context.ArticleCategories.Select(s => new EditArticleCategory

@@ -35,7 +35,7 @@ namespace BlogManagement.Application
             var picture = fileUploader.Upload(command.Picture, path);
             var result = new Article(command.CategoryId, command.Title, command.ShortDescription,
                 command.Description, picture, command.PictureAlt, command.PictureTitle,slugy,
-                command.PublishDate.ToGeorgianDateTime(), command.Keywords, command.MrtaDescription,
+                command.PublishDate.ToGeorgianDateTime(), command.Keywords, command.MetaDescription,
                 command.CanonalAddress);
             articleRepository.Create(result);
             articleRepository.SaveChanges();
@@ -56,7 +56,7 @@ namespace BlogManagement.Application
             var picture = fileUploader.Upload(command.Picture, path);
             result.Edit(command.CategoryId, command.Title, command.ShortDescription,
                 command.Description, picture, command.PictureAlt, command.PictureTitle, slugy,
-                command.PublishDate.ToGeorgianDateTime(), command.Keywords, command.MrtaDescription,
+                command.PublishDate.ToGeorgianDateTime(), command.Keywords, command.MetaDescription,
                 command.CanonalAddress);
             articleRepository.SaveChanges();
             return oprationresult.Sucsseded();

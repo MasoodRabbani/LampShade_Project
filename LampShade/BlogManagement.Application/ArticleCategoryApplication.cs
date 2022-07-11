@@ -40,7 +40,7 @@ namespace BlogManagement.Application
         public OprationResult Edit(EditArticleCategory command)
         {
             var oprationresult = new OprationResult();
-            var result = articleCategory.GetCategoryBy(command.Id);
+            var result = articleCategory.Get(command.Id);
             if (result == null)
                 return oprationresult.Feiled(ApplicationMessages.RecordNotFound);
             if (articleCategory.Exists(s => s.Name == command.Name))
@@ -51,6 +51,11 @@ namespace BlogManagement.Application
                 slugy, command.Keywords, command.MetaDescription, command.CanonicalAddress);
             articleCategory.SaveChanges();
             return oprationresult.Sucsseded();
+        }
+
+        public List<ArticleCategoryViewModel> GetArticleCategories()
+        {
+            return articleCategory.GetArticleCategory();
         }
 
         public EditArticleCategory GetDetails(long Id)

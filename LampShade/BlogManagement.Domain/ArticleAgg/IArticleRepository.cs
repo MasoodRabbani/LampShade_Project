@@ -10,7 +10,7 @@ namespace BlogManagement.Domain.ArticleAgg
 {
     public interface IArticleRepository:IRepository<long, Article>
     {
-        Article GeCategoryBy(long Id);
+        Article GetCategoryBy(long Id);
         EditArticle GetDetails(long id);
         List<ArticleViewModel> Search(ArticleSearchModel model);
     }

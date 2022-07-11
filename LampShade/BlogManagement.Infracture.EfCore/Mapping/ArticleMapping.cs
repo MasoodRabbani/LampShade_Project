@@ -22,7 +22,7 @@ namespace BlogManagement.Infracture.EfCore.Mapping
             builder.Property(s => s.PictureTitle).HasMaxLength(500);
             builder.Property(s => s.Slug).HasMaxLength(600);
             builder.Property(s => s.Keywords).HasMaxLength(150);
-            builder.Property(s => s.MrtaDescription).HasMaxLength(150);
+            builder.Property(s => s.MetaDescription).HasMaxLength(150);
             builder.Property(s => s.CanonalAddress).HasMaxLength(1000);
             builder.Property(s => s.PublishDate);
             builder.Property(s => s.Description);

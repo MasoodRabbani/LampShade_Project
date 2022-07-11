@@ -35,7 +35,7 @@ namespace ShopManegement.Application
         public OprationResult Edit(EditSlide Command)
         {
             var oprationresult = new OprationResult();
-            var result = slideRepository.GetCategoryBy(Command.Id);
+            var result = slideRepository.Get(Command.Id);
             if (result == null)
                 return oprationresult.Feiled(ApplicationMessages.RecordNotFound);
             var fileuploader = fileUploader.Upload(Command.Picture, "Slides");
@@ -58,7 +58,7 @@ namespace ShopManegement.Application
         public OprationResult Remove(long Id)
         {
             var oprationres = new OprationResult();
-            var result=slideRepository.GetCategoryBy(Id);
+            var result=slideRepository.Get(Id);
             if(result == null)
                 return oprationres.Feiled(ApplicationMessages.RecordNotFound);
             result.Remove();
@@ -69,7 +69,7 @@ namespace ShopManegement.Application
         public OprationResult Restore(long Id)
         {
             var oprationres = new OprationResult();
-            var result = slideRepository.GetCategoryBy(Id);
+            var result = slideRepository.Get(Id);
             if (result == null)
                 return oprationres.Feiled(ApplicationMessages.RecordNotFound);
             result.Restore();

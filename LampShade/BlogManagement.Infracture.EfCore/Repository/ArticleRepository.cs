@@ -20,7 +20,7 @@ namespace BlogManagement.Infracture.EfCore.Repository
             this.context = context;
         }
 
-        public Article GeCategoryBy(long Id)
+        public Article GetCategoryBy(long Id)
         {
             return context.Articles.Include(s => s.ArticleCategory).FirstOrDefault(s => s.Id == Id);
         }
@@ -35,7 +35,7 @@ namespace BlogManagement.Infracture.EfCore.Repository
                 CategoryId = s.CategoryId,
                 Description = s.Description,
                 Keywords = s.Keywords,
-                MrtaDescription = s.MrtaDescription,
+                MetaDescription = s.MetaDescription,
                 PictureAlt = s.PictureAlt,
                 PictureTitle = s.PictureTitle,
                 //Picture = s.Picture,
@@ -47,10 +47,11 @@ namespace BlogManagement.Infracture.EfCore.Repository
 
         public List<ArticleViewModel> Search(ArticleSearchModel model)
         {
-            var query = context.Articles.Select(s => new ArticleViewModel
+            var query = context.Articles.Include(s=>s.ArticleCategory).Select(s => new ArticleViewModel
             {
                 Id = s.Id,
-                CategoryId = s.CategoryId,
+                CategoryId=s.CategoryId,
+                Category = s.ArticleCategory.Name,
                 Picture = s.Picture,
                 ShortDescription = s.ShortDescription,
                 Title = s.Title,

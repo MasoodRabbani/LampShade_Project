@@ -27,7 +27,7 @@ namespace _0_Framwork.Infrastructure
             return db.Set<T>().Any(expression);
         }
 
-        public T GetCategoryBy(TKey Id)
+        public T Get(TKey Id)
         {
             return db.Set<T>().Find(Id);
         }

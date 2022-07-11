@@ -36,7 +36,7 @@ namespace ShopManegement.Application
         public OprationResult Edit(EditProductCategory model)
         {
             var opration = new OprationResult();
-            var productcategory = productCategoryRepository.GetCategoryBy(model.Id);
+            var productcategory = productCategoryRepository.Get(model.Id);
             if (productcategory==null)
                 return opration.Feiled(ApplicationMessages.RecordNotFound);
             if (productCategoryRepository.Exists(s => s.Name == model.Name && s.Id != model.Id))
