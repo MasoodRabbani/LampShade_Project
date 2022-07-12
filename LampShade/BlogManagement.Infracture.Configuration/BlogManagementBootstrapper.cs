@@ -1,4 +1,7 @@
-﻿using BlogManagement.Application;
+﻿using _01_LampShadeQuery.Contracts.Article;
+using _01_LampShadeQuery.Contracts.ArticleCategory;
+using _01_LampShadeQuery.Query;
+using BlogManagement.Application;
 using BlogManagement.Application.Contracts.Article;
 using BlogManagement.Application.Contracts.ArticleCategory;
 using BlogManagement.Domain.ArticleAgg;
@@ -21,6 +24,9 @@ namespace BlogManagement.Infracture.Configuration
             
             services.AddTransient<IArticleRepository, ArticleRepository>();
             services.AddTransient<IArticleApplication,ArticleApplication>();
+
+            services.AddTransient<IArticleQuery, ArticleQuery>();
+            services.AddTransient<IArticleCategoryQuery, ArticleCategoryQuery>();
 
             services.AddDbContext<BlogContext>(s => s.UseSqlServer(connectingstring));
         }

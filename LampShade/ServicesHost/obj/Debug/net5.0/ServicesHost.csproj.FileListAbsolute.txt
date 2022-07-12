@@ -391,3 +391,6 @@ C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Se
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\Article\Create.cshtml.g.cs
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\Article\Edit.cshtml.g.cs
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\Article\Index.cshtml.g.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\LastestArticle\Default.cshtml.g.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Pages\Article.cshtml.g.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Pages\ArticleCategory.cshtml.g.cs

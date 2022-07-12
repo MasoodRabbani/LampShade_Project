@@ -2684,7 +2684,7 @@ select {
 	display: -ms-flexbox;
 	display: flex;
 	flex-direction: column;
-	width: 62px;
+	width: auto;
 	height: 70px;
 	text-align: center;
 	background: #fff;

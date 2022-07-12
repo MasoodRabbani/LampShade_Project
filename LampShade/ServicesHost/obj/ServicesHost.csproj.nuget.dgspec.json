@@ -28,6 +28,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\BlogManagement.Infracture.EfCore\\BlogManagement.Infracture.EfCore.csproj": {
+                "projectPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\BlogManagement.Infracture.EfCore\\BlogManagement.Infracture.EfCore.csproj"
+              },
               "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\DiscountManagement.Infrastracture.EfCore\\DiscountManagement.Infrastracture.EfCore.csproj": {
                 "projectPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\DiscountManagement.Infrastracture.EfCore\\DiscountManagement.Infrastracture.EfCore.csproj"
               },
@@ -346,6 +349,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\01_LampShadeQuery\\01_LampShadeQuery.csproj": {
+                "projectPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\01_LampShadeQuery\\01_LampShadeQuery.csproj"
+              },
               "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\BlogManagement.Application\\BlogManagement.Application.csproj": {
                 "projectPath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\BlogManagement.Application\\BlogManagement.Application.csproj"
               },

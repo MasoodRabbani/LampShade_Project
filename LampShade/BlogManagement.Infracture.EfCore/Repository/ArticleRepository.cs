@@ -53,7 +53,7 @@ namespace BlogManagement.Infracture.EfCore.Repository
                 CategoryId=s.CategoryId,
                 Category = s.ArticleCategory.Name,
                 Picture = s.Picture,
-                ShortDescription = s.ShortDescription,
+                ShortDescription = s.ShortDescription.Substring(0,Math.Min(s.ShortDescription.Length,50))+"...",
                 Title = s.Title,
                 PublishDate = s.PublishDate.ToFarsi()
             });

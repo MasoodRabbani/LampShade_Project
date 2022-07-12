@@ -2101,6 +2101,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "BlogManagement.Infracture.EfCore": "1.0.0",
           "DiscountManagement.Infrastracture.EfCore": "1.0.0",
           "InventoryManagement.Infrastructure.EfCore": "1.0.0",
           "ShopManegement.Infrastracture.EFCore": "1.0.0"
@@ -2173,6 +2174,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "01_LampShadeQuery": "1.0.0",
           "BlogManagement.Application": "1.0.0",
           "BlogManagement.Domain": "1.0.0",
           "BlogManagement.Infracture.EfCore": "1.0.0",
