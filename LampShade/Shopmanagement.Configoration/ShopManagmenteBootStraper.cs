@@ -21,8 +21,6 @@ using _01_LampShadeQuery.Contracts.Slide;
 using _01_LampShadeQuery.Query;
 using _01_LampShadeQuery.Contracts.ProductCategory;
 using _01_LampShadeQuery.Contracts.Product;
-using ShopManagement.Domain.CommentAgg;
-using ShopManagement.Application.Contracts.Comment;
 
 namespace ShopManagement.Configuration
 {
@@ -41,8 +39,6 @@ namespace ShopManagement.Configuration
             service.AddTransient<IProductPictureRepository, ProductPictureRepository>();
             service.AddTransient<IProductPictureApplication, ProductPictureApplication>();
 
-            service.AddTransient<ICommentRepository, CommentRepository>();
-            service.AddTransient<ICommentApplication,CommentApplication>();
 
             service.AddTransient<ISlideApplication, SlideApplication>();
             service.AddTransient<ISlideRepository, SlideRepository>();

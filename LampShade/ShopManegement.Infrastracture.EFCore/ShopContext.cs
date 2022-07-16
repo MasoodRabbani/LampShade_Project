@@ -5,7 +5,6 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using ShopManagement.Domain.CommentAgg;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
 using ShopManagement.Domain.ProductPictureAgg;
@@ -20,7 +19,6 @@ namespace ShopManegement.Infrastracture.EFCore
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductPicture> ProductPictures { get; set; }
         public DbSet<Slide> Slides { get; set; }
-        public DbSet<Comment> Comments { get; set; }
 
         public ShopContext(DbContextOptions<ShopContext> options):base(options)
         {

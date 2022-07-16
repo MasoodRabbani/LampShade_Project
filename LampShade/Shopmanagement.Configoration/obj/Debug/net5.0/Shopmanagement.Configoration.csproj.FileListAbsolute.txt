@@ -61,3 +61,9 @@ C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Sh
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Shopmanagement.Configoration\bin\Debug\net5.0\BlogManagement.Application.Contracts.pdb
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Shopmanagement.Configoration\bin\Debug\net5.0\BlogManagement.Domain.pdb
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Shopmanagement.Configoration\bin\Debug\net5.0\BlogManagement.Infracture.EfCore.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Shopmanagement.Configoration\bin\Debug\net5.0\CommentManagement.Application.Contract.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Shopmanagement.Configoration\bin\Debug\net5.0\CommentManagement.Domain.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Shopmanagement.Configoration\bin\Debug\net5.0\CommentManagement.Infrastracture.EfCore.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Shopmanagement.Configoration\bin\Debug\net5.0\CommentManagement.Application.Contract.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Shopmanagement.Configoration\bin\Debug\net5.0\CommentManagement.Domain.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Shopmanagement.Configoration\bin\Debug\net5.0\CommentManagement.Infrastracture.EfCore.pdb

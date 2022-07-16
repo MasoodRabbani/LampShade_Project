@@ -42,7 +42,7 @@
                                                 <!--=======  single blog post  =======-->
                                                 <div class="single-blog-post">
                                                     <div class="single-blog-post__image">
-                                                        <a href="blog-post-left-sidebar.html">
+                                                        <a asp-page="/Article" asp-route-id="@item.Slug">
                                                             <img src="~/ProductPicture/@item.Picture"
                                                                 class="img-fluid" alt="@item.PictureAlt" title="@item.PictureTitle">
                                                         </a>

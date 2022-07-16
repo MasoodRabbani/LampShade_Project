@@ -1,9 +1,10 @@
 ﻿using _0_Framwork.Application;
+using _01_LampShadeQuery.Contracts.Comment;
 using _01_LampShadeQuery.Contracts.Product;
+using CommentManagement.Infrastracture.EfCore;
 using DiscountManagement.Infrastracture.EfCore;
 using InventoryManagement.Infrastructure.EfCore;
 using Microsoft.EntityFrameworkCore;
-using ShopManagement.Domain.CommentAgg;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManegement.Infrastracture.EFCore;
 using System;
@@ -19,19 +20,20 @@ namespace _01_LampShadeQuery.Query
         private readonly ShopContext shopContext;
         private readonly InventoryContext inventoryContext;
         private readonly DiscountContext discountContext;
+        private readonly CommentContext commentContext;
 
-        public ProductQuery(ShopContext shopContext, InventoryContext inventoryContext, DiscountContext discountContext)
+        public ProductQuery(ShopContext shopContext, InventoryContext inventoryContext, DiscountContext discountContext, CommentContext commentContext)
         {
             this.shopContext = shopContext;
             this.inventoryContext = inventoryContext;
             this.discountContext = discountContext;
+            this.commentContext = commentContext;
         }
 
         public ProductQueryModel GetDetails(string slug)
         {
             var product = shopContext.Products
                 .Include(s => s.ProductCategory)
-                .Include(s => s.Comments)
                 .Select(s => new ProductQueryModel
                 {
                     Id = s.Id,
@@ -40,12 +42,12 @@ namespace _01_LampShadeQuery.Query
                     PictureAlt = s.PictureAlt,
                     PictureTitle = s.PictureTitle,
                     ShortDescription = s.ShortDescription,
+                    MetaDescription = s.MetaDescription,
                     Code = s.Code,
                     KeyWords = s.Keywords,
                     Description = s.Description,
                     Pictures = MapProductPicture(s.ProductPictures),
-                    Comments = MapComments(s.Comments),
-                Sluge = s.Slug,
+                    Sluge = s.Slug,
                 }).FirstOrDefault(s => s.Sluge == slug);
             var inventory = inventoryContext.Inventories.Select(s => new { s.ProductId, s.UnitPrice ,s.IsStock}).FirstOrDefault(s => s.ProductId == product.Id);
             var discount = discountContext.CustomerDiscounts
@@ -66,19 +68,19 @@ namespace _01_LampShadeQuery.Query
                 }
 
             }
+            product.Comments=commentContext.Comments
+                .Where(s=>s.Type==CommentType.Product)
+                .Where(s=>s.OwnerRecordId==product.Id)
+                .Where(s=>!s.IsCanceled&&s.IsConfirmed)
+                .Select(s=>new CommentQueryModel
+                {
+                    Id = s.Id,
+                    Message = s.Message,
+                    Name=s.Name
+                }).OrderByDescending(s=>s.Id).ToList();
             return product;
                 
 
-        }
-
-        private static List<CommentQueryModel> MapComments(List<Comment> comments)
-        {
-            return comments.Where(s => s.IsConfirmed).Select(s => new CommentQueryModel
-            {
-                Id = s.Id,
-                Message = s.Message,
-                Name = s.Name
-            }).ToList();
         }
 
         private static List<ProductPictureQueryModel> MapProductPicture(List<ProductPicture> productPictures)

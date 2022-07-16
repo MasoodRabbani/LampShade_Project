@@ -2,6 +2,9 @@
 @using _0_Framwork.Application
 @model ServicesHost.Pages.ProductModel
 @{
+    ViewData["Title"] = @Model.Product.Name;
+    ViewData["Keywords"] = @Model.Product.KeyWords;
+    ViewData["MetaDescription"] = @Model.Product.MetaDescription;
 }
     <div class="breadcrumb-area section-space--half">
         <div class="container wide">
@@ -329,7 +332,7 @@
                                                                         <textarea name="Message" id="your-review"
                                                                             placeholder="نظر خود را بنویسید ..." ></textarea>
                                                                     </div>
-                                                                    <input type="hidden" name="ProductId" value="@Model.Product.Id"/>
+                                                                    <input type="hidden" name="OwnerRecordId" value="@Model.Product.Id"/>
                                                                     <input type="hidden" name="Slug" value="@Model.Product.Sluge"/>
                                                                     <div class="col-12">
                                                                         <input value="ارسال نظر" type="submit">

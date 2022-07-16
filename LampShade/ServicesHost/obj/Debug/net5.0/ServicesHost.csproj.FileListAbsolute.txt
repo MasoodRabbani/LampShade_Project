@@ -373,8 +373,6 @@ C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Se
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\System.IO.Pipelines.dll
-C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\ServicesHost.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Comments\Index.cshtml.g.cs
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\BlogManagement.Application.Contracts.dll
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\BlogManagement.Application.dll
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\BlogManagement.Domain.dll
@@ -394,3 +392,15 @@ C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\Se
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\LastestArticle\Default.cshtml.g.cs
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Pages\Article.cshtml.g.cs
 C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Pages\ArticleCategory.cshtml.g.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\CommentManagement.Application.Contract.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\CommentManagement.Application.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\CommentManagement.Configuration.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\CommentManagement.Domain.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\CommentManagement.Infrastracture.EfCore.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\CommentManagement.Application.Contract.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\CommentManagement.Configuration.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\CommentManagement.Application.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\CommentManagement.Domain.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\bin\Debug\net5.0\CommentManagement.Infrastracture.EfCore.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Comments\Index.cshtml.g.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\ServicesHost\obj\Debug\net5.0\ServicesHost.MvcApplicationPartsAssemblyInfo.cs

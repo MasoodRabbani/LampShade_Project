@@ -1,7 +1,8 @@
 using _01_LampShadeQuery.Contracts.Product;
+using CommentManagement.Application.Contract.Comment;
+using CommentManagement.Infrastracture.EfCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using ShopManagement.Application.Contracts.Comment;
 
 namespace ServicesHost.Pages
 {
@@ -23,6 +24,7 @@ namespace ServicesHost.Pages
         }
         public IActionResult OnPost(AddComment comment,string Slug)
         {
+            comment.Type = CommentType.Product;
             var result = commentapplication.Add(comment);
             return RedirectToPage("/Product", new { Id = Slug });
         }
