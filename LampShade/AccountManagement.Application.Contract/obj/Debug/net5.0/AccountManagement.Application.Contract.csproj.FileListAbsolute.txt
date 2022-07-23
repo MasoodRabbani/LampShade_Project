@@ -1,0 +1,15 @@
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\AccountManagement.Application.Contract\bin\Debug\net5.0\AccountManagement.Application.Contract.deps.json
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\AccountManagement.Application.Contract\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\AccountManagement.Application.Contract\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\AccountManagement.Application.Contract\bin\Debug\net5.0\0_Framwork.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\AccountManagement.Application.Contract\bin\Debug\net5.0\0_Framwork.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.csproj.AssemblyReference.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.AssemblyInfoInputs.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.AssemblyInfo.cs
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.csproj.CoreCompileInputs.cache
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.csproj.CopyComplete
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\AccountManagement.Application.Contract\obj\Debug\net5.0\refint\AccountManagement.Application.Contract.dll
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\AccountManagement.Application.Contract\obj\Debug\net5.0\AccountManagement.Application.Contract.pdb
+C:\Users\MrClike\Desktop\New folder\MasoodRabbani\LampShade_Project\LampShade\AccountManagement.Application.Contract\obj\Debug\net5.0\ref\AccountManagement.Application.Contract.dll
