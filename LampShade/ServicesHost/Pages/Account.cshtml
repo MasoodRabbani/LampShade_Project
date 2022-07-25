@@ -68,7 +68,10 @@
                                 </form>
                             </div>
                             <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
-                                <form action="#">
+                                @if(TempData["PassError"]!=null){
+                                   <div class="alert alert-danger">@TempData["PassError"]</div>
+                                }
+                                <form asp-page="/Account" asp-page-handler="Register" method="post">
 
                                     <div class="login-form">
                                         <h4 class="login-title">ثبت نام</h4>

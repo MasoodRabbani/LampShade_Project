@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace AccountManagement.Application.Contract.Account
 {
-    public class CreateAccount
+    public class Register
     {
         [Required(ErrorMessage =ValidaionMessages.IsRequired)]
         public string FullName { get; set; }

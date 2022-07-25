@@ -1,4 +1,4 @@
-using AccountManagement.Application.Contract.Account;
+﻿using AccountManagement.Application.Contract.Account;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -30,5 +30,16 @@ namespace ServicesHost.Pages
             accountApplication.Logout();
             return RedirectToPage("./Index");
         }
+        public IActionResult OnPostRegister(Register command,string RePassword)
+        {
+            command.RoleId = 2;
+            if (command.Password != RePassword)
+            {
+                TempData["PassError"] = "گذر واژه با تایید گذر واژه یکسان نیست";
+                return RedirectToPage("/Account");
+            }
+            var result=accountApplication.Register(command);
+            return RedirectToPage("/Account",result);
+        } 
     }
 }

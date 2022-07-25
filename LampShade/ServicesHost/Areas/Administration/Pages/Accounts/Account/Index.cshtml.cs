@@ -38,13 +38,13 @@ namespace ServicesHost.Areas.Administration.Pages.Accounts.Account
 
         public IActionResult OnGetCreate()
         {
-            var command = new CreateAccount() { Roles=roleApplication.Search()};
+            var command = new Register() { Roles=roleApplication.Search()};
             return Partial("./Create", command);
         }
 
-        public IActionResult OnPostCreate(CreateAccount command)
+        public IActionResult OnPostCreate(Register command)
         {
-            var result = accountApplication.Create(command);
+            var result = accountApplication.Register(command);
             return new JsonResult(result);
         }
 
