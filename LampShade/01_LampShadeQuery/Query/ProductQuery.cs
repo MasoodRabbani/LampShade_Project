@@ -5,6 +5,7 @@ using CommentManagement.Infrastracture.EfCore;
 using DiscountManagement.Infrastracture.EfCore;
 using InventoryManagement.Infrastructure.EfCore;
 using Microsoft.EntityFrameworkCore;
+using ShopManagement.Application.Contracts.Order;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManegement.Infrastracture.EFCore;
 using System;
@@ -37,6 +38,7 @@ namespace _01_LampShadeQuery.Query
                 .Select(s => new ProductQueryModel
                 {
                     Id = s.Id,
+                    Name = s.Name,
                     Category = s.ProductCategory.Name,
                     Picture = s.Picture,
                     PictureAlt = s.PictureAlt,
@@ -58,6 +60,7 @@ namespace _01_LampShadeQuery.Query
             {
                 product.IsInStack = inventory.IsStock;
                 product.Price = inventory.UnitPrice.ToMoney();
+                product.DoublePrice = inventory.UnitPrice;
                 if (discount!=null)
                 {
                     product.DiscountExpireDate = discount.EndDate.ToDiscountFormat();
@@ -174,6 +177,20 @@ namespace _01_LampShadeQuery.Query
                 }
             }
             return products;
+        }
+
+        public List<CartItems> CheackInventoryStatus(List<CartItems> items)
+        {
+            var inventory=inventoryContext.Inventories.ToList();
+            foreach (var i in items.Where(s=>inventory.Any(g=>g.ProductId==s.Id&&g.IsStock)))
+            {
+                var inventoryitem=inventory.FirstOrDefault(s=>s.ProductId==i.Id);
+                if (inventoryitem!=null)
+                {
+                    i.IsInStack = inventoryitem.CalculateInventoryStock() >= i.Count;
+                }
+            }
+            return items;
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using _0_Framwork.Application;
+using _01_LampShadeQuery.Contracts;
 using AccountManagement.Configuration;
 using BlogManagement.Infracture.Configuration;
 using CommentManagement.Configuration;
@@ -45,26 +46,27 @@ namespace ServicesHost
             AccountManagementBootstrapper.Configuration(services, connectingstring);
             services.AddTransient<IFileUploader,FileUploader>();
             services.AddTransient<IAuthHelper,AuthHelper>();
+            services.AddTransient<ICartCalculatorServices,CartCalclatorServices>();
 
 
-            services.Configure<CookiePolicyOptions>(options =>
-            {
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = Microsoft.AspNetCore.Http.SameSiteMode.Strict;
-            });
+            //services.Configure<CookiePolicyOptions>(options =>
+            //{
+            //    options.CheckConsentNeeded = context => true;
+            //    options.MinimumSameSitePolicy = SameSiteMode.None;
+            //});
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, o =>
                 {
+                    o.Cookie.Name = "Identity-Users";
                     o.LoginPath = new PathString("/Account");
                     o.LogoutPath = new PathString("/Account");
                     o.AccessDeniedPath = new PathString("/AccessDenied");
                 });
-            
-            
-            
-            services.AddRazorPages();
-        }
 
+            
+            services.AddRazorPages()
+                .AddMvcOptions(option=>option.Filters.Add<SecutityPageFilter>());
+        }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -78,17 +80,19 @@ namespace ServicesHost
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            app.UseCookiePolicy();
+            
             app.UseAuthentication();
 
             app.UseHttpsRedirection();
 
             app.UseStaticFiles();
 
-            app.UseCookiePolicy();
 
             app.UseRouting();
 
             app.UseAuthorization();
+
 
             app.UseEndpoints(endpoints =>
             {

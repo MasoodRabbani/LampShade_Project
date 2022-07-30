@@ -20,7 +20,7 @@ using ServicesHost;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2bcab149a875f4f66295b4d7d53309232c084dd2", @"/Areas/Administration/Pages/Blog/Article/Edit.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"62855f581bc2c8962d60fca464827ab12ebda889", @"/Areas/Administration/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4bc7b2e07618bb903d19c9e240261849667341cf", @"/Areas/Administration/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Administration_Pages_Blog_Article_Edit : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     #nullable disable

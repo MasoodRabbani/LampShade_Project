@@ -20,7 +20,7 @@ using ServicesHost;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a845b4a9ffe0c88f6e1a30401274b087193f5aef", @"/Areas/Administration/Pages/Shop/Product/Edit.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"62855f581bc2c8962d60fca464827ab12ebda889", @"/Areas/Administration/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4bc7b2e07618bb903d19c9e240261849667341cf", @"/Areas/Administration/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Administration_Pages_Shop_Product_Edit : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ShopManagement.Application.Contracts.Product.EditProduct>
     #nullable disable

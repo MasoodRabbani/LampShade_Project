@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Xy+FDAKKKP0Ah+N9T8ycO+6yY2+1bTxV9GqTlhbFs+bVLnyvyDuw6QyVzbX01p/woYOTEv4vCYy2KoEHc30w1A==",
+  "dgSpecHash": "1VphsI3L4ETIbTl8tL32oU777/9FkRdbq3AO9N5iutZHb1SrO/O5GNt4u4boT5Q4mVe3J46nFIE2EZZesOjecA==",
   "success": true,
   "projectFilePath": "C:\\Users\\MrClike\\Desktop\\New folder\\MasoodRabbani\\LampShade_Project\\LampShade\\CommentManagement.Domain\\CommentManagement.Domain.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,7 @@
     "C:\\Users\\MrClike\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\MrClike\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\MrClike\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\MrClike\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\MrClike\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\MrClike\\.nuget\\packages\\system.collections.immutable\\5.0.0-preview.3.20214.6\\system.collections.immutable.5.0.0-preview.3.20214.6.nupkg.sha512",
     "C:\\Users\\MrClike\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0-preview.3.20214.6\\system.componentmodel.annotations.5.0.0-preview.3.20214.6.nupkg.sha512",

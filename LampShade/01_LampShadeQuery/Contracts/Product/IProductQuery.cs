@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopManagement.Application.Contracts.Order;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,5 +12,6 @@ namespace _01_LampShadeQuery.Contracts.Product
         ProductQueryModel GetDetails(string slug);
         List<ProductQueryModel> GetLatestArrivals();
         List<ProductQueryModel> Search(string value);
+        List<CartItems> CheackInventoryStatus(List<CartItems> items);
     }
 }

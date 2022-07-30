@@ -2,6 +2,7 @@
 using _0_Framwork.Application;
 using AccountManagement.Application.Contract.Account;
 using AccountManagement.Domain.AccountAgg;
+using AccountManagement.Domain.RoleAgg;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,13 +17,15 @@ namespace AccountManagement.Application
         private readonly IAccountRepository accountRepository;
         private readonly IFileUploader fileUploader;
         private readonly IAuthHelper authHelper;
+        private readonly IRoleRepository roleRepository;
 
-        public AccountApplication(IPasswordHasher passwordHasher, IAccountRepository accountRepository, IFileUploader fileUploader, IAuthHelper authHelper)
+        public AccountApplication(IPasswordHasher passwordHasher, IAccountRepository accountRepository, IFileUploader fileUploader, IAuthHelper authHelper, IRoleRepository roleRepository)
         {
             this.passwordHasher = passwordHasher;
             this.accountRepository = accountRepository;
             this.fileUploader = fileUploader;
             this.authHelper = authHelper;
+            this.roleRepository = roleRepository;
         }
 
         public OprationResult ChangePassword(ChangePassword command)
@@ -81,13 +84,14 @@ namespace AccountManagement.Application
             var result = passwordHasher.Check(account.Password,command.Password);
             if(!result.Verified)
                 return oprationresult.Feiled(ApplicationMessages.WrongUserName);
-            authHelper.Sigin(new AuthViewModel
-            {
-                Id = account.Id,
-                FullName = account.FullName,
-                RoleId = account.RoleId,
-                UserName = account.UserName
-            });
+
+            var permission = roleRepository.Get(account.RoleId)
+                .Permissions.Select(s => s.Code).ToList();
+
+            var authviewmodel = new AuthViewModel(account.Id, account.RoleId, account.FullName, account.UserName, permission);
+
+
+            authHelper.Sigin(authviewmodel);
             return oprationresult.Sucsseded();
         }
 
